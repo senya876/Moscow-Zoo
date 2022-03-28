@@ -7,8 +7,8 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-    let slides = document.querySelectorAll(".sliderSpicok-item");
-    let dots = document.querySelectorAll(".itemDots");
+    let slides = document.querySelectorAll(".main__slider-item");
+    let dots = document.querySelectorAll(".main__slider-itemDots");
     if (n > slides.length) {
       slideIndex = 1
     }

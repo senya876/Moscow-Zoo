@@ -78,7 +78,7 @@ $fontFamRoboto: 'Roboto', sans-serif;
 
 // ------- MAIN -------
 
-.sliderPhoto{
+.main__slider-img{
     object-fit: cover;
     max-width: 1274px;
     height: 800px;
@@ -87,16 +87,16 @@ $fontFamRoboto: 'Roboto', sans-serif;
     box-shadow: 5px 5px 5px rgba(90, 90, 90, 0.459);
 }
 
-.sliderSpicok-item{
+.main__slider-item{
     list-style-type: none;
 }
 
-.sliderDots {
+.main__slider-dots {
     text-align: center;
     margin-top: 15px;
 }
 
-.strelkaLeft, .strelkaRight{
+.main__slider-arrowLeft, .main__slider-arrowRight{
     cursor: pointer;
     position: absolute;
     top: 46%;
@@ -111,20 +111,20 @@ $fontFamRoboto: 'Roboto', sans-serif;
     background-color: rgba(128, 128, 128, 0.637);
 }
 
-.strelkaRight{
+.main__slider-arrowRight{
     right: 0;
     border-radius: 3px 0 0 3px;
 }
 
-.strelkaLeft:hover{
+.main__slider-arrowLeft:hover{
     background-color: rgba(73, 73, 73, 0.788);
 }
 
-.strelkaRight:hover{
+.main__slider-arrowRight:hover{
     background-color: rgba(73, 73, 73, 0.788);
 }
 
-.itemDots{
+.main__slider-itemDots{
     cursor: pointer;
     height: 14px;
     width: 14px;
@@ -136,28 +136,17 @@ $fontFamRoboto: 'Roboto', sans-serif;
     box-shadow: 0 0 3px 2px rgba(90, 90, 90, 0.459);
 }
 
-.sliderText{
-    position: absolute;
-    color: white;
-    padding: 15px;
-    border-radius: 10px 0px 10px 0px;
-    background: #141e30e7;
-    bottom: 93.4%;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-}
-
-.header-test_link__photo{
+.main__slider-link{
     text-decoration: none;
 }
 
 .active,
-.itemDots:hover {
+.main__slider-itemDots:hover {
     background-color: rgb(117, 117, 117);
     box-shadow: 0 0 3px 2px rgba(90, 90, 90, 0.459);
 }
 
-.sliderSpicok-item .sliderPhoto, .sliderText{
+.main__slider-item .main__slider-img{
     animation-name: slider;
     animation-duration: 3s;
 }
