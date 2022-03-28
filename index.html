@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Московский Зоопарк</title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="container header__wrapper">
+            <a href="#" class="header__logo-link"><img src="./images/logo.png" alt="#" class="header__logo"></a>
+            <nav>
+                <ul class="header__list">
+                    <li class="header__item">
+                        <a href="#" class="header__link">Главная</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Услуги</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Виды животных</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">Лекции</a>
+                    </li>
+                    <li class="header__item">
+                        <a href="#" class="header__link">О нас</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav>
+                <button class="header__button header__button-enter">Войти</button>
+                <button class="header__button header__button-registration">Регистрация</button>
+            </nav>    
+        </div>
+    </header>
+    <main class="main">
+        <div class="container main__wrapper">
+            <div class="main__slider">
+                <ul class="sliderSpicok">
+                    <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="images/unsplash_Sg_OwwU2Z9o.png" alt="#" class="sliderPhoto"></li>
+                    <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="images/unsplash_eEMm5-KDHms.png" alt="#" class="sliderPhoto"></li>
+                    <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="images/unsplash_UgidX4V13Gc.png" alt="#" class="sliderPhoto"></li>
+                    <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="images/unsplash_GuoDDPeQtdM.png" alt="#" class="sliderPhoto"></li>
+                    <li class="sliderSpicok-item"><a href="#" class="header-test_link__photo"><img src="images/unsplash_XvaaB8jpSoQ.png" alt="#" class="sliderPhoto"></li>
+                </ul>
+                <a class="strelkaLeft" onclick="backSlide(-1)">&#10094;</a>
+                <a class="strelkaRight" onclick="nextSlide(1)">&#10095;</a>
+                <div class="sliderDots">
+                    <span class="itemDots" onclick="currentSlide(1)"></span>
+                    <span class="itemDots" onclick="currentSlide(2)"></span>
+                    <span class="itemDots" onclick="currentSlide(3)"></span>
+                    <span class="itemDots" onclick="currentSlide(4)"></span>
+                    <span class="itemDots" onclick="currentSlide(5)"></span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<script src="js/slider.js"></script>
+</body>
+</html>
