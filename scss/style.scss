@@ -230,3 +230,84 @@ $lineMar: 200%;
     }
 }
 
+.main__services{
+    &-cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    &-title{
+        font-family: $fontFamMontserrat;
+        font-weight: 700;
+        font-size: 48px;
+        color: $colorWhite;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &-card{
+        background-color: $colorBlue;
+        max-width: 623px;
+        padding: 30px 25px;
+        border-radius: 30px;
+        margin-bottom: 35px;
+        &:nth-child(2){
+            background-color: $colorGreen;
+        }
+        &--title{
+            font-family: $fontFamRoboto;
+            font-weight: 700;
+            font-size: 24px;
+            color: $colorWhite;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+        &--img{
+            margin-bottom: 15px;
+            width: 100%;
+        }
+        &--textInfo{
+            margin-bottom: 10px;
+        }
+        &--textInfo, &--textList, &--item, &--button{
+            font-family: $fontFamRoboto;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: $lineMar;
+            color: $colorWhite;
+        }
+        &--list{
+            margin: 6px 0px 24px 40px;
+            
+        }
+        &--item{
+            margin-bottom: 14px;
+        }
+        &--button{
+            width: 100%;
+            background-color: $colorLightBlue;
+            border-radius: 10px;
+            border: none;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            cursor: pointer;
+            transition: 0.3s ease;
+            &:hover{
+                background-color: $colorLightGreen;
+            }
+            &:active{
+                background-color: $colorGreen;
+            }
+        }
+        &--img_list{
+            width: 100%;
+            display: flex;
+        }
+        &--photo{
+            width: 100%;     
+        }
+    }
+}
+
+
+
+
