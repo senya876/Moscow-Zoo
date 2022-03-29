@@ -8,6 +8,7 @@ $colorGreen: #5A8D79;
 $colorTextGreen: #76C1A2;
 $fontFamMontserrat: 'Montserrat', sans-serif;
 $fontFamRoboto: 'Roboto', sans-serif;
+$lineMar: 200%;
 
 *{
     box-sizing: border-box;
@@ -47,6 +48,13 @@ $fontFamRoboto: 'Roboto', sans-serif;
         color: #ffffff;
         margin-left: 31.5px;
         margin-right: 31.5px;
+        transition: 0.5s ease;
+        &:hover{
+            color: $colorLightGreen;
+        }
+        &:focus{
+            color: $colorLightGreen;
+        }
     }
     &__button{
         font-family: $fontFamRoboto;
@@ -56,13 +64,25 @@ $fontFamRoboto: 'Roboto', sans-serif;
         border: none;
         color: $colorWhite;
         cursor: pointer;
+        transition: 0.25s ease;
         &-enter{
             background-color: $colorLightBlue;
             margin-right: 20px;
+            &:hover{
+                background-color: $colorLightGreen;
+            }
+            &:active{
+                box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.2) inset;
+            }
         }
         &-registration{
             background-color: $colorLightGreen;
-            
+            &:hover{
+                background-color: $colorLightBlue;
+            }
+            &:active{
+                box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2) inset;
+            }
         }
     }
 }
@@ -78,8 +98,11 @@ $fontFamRoboto: 'Roboto', sans-serif;
 
 .main{
     background: linear-gradient(180deg, #76C1A2 0%, #82A1CF 100%);
-    &__wrapper{
+    &__wrapper-slider{
         padding-top: 30px;
+        padding-bottom: 100px;
+    }
+    &__wrapper-about{
         padding-bottom: 100px;
     }
 }
@@ -93,6 +116,7 @@ $fontFamRoboto: 'Roboto', sans-serif;
     &-img{
         object-fit: cover;
         width: 100%;
+        border-radius: 4px;
     }
     &-item, &-img{
         animation-name: slider;
@@ -102,7 +126,7 @@ $fontFamRoboto: 'Roboto', sans-serif;
         cursor: pointer;
         position: absolute;
         top: 319px;
-        padding: 70px 32px;
+        padding: 65px 32px;
         color: $colorLightBlue;
         background: rgba(83, 106, 95, 0.53);
         font-size: 23px;
@@ -145,10 +169,63 @@ $fontFamRoboto: 'Roboto', sans-serif;
     }
     @keyframes slider {
         from {
-            opacity: 0.8
+            opacity: 0.9
         }
         to {
             opacity: 1
+        }
+    }
+}
+
+.main__wrapper-about{
+    width: 100%;
+}
+
+.main__about{
+    &-title{
+        font-family: $fontFamMontserrat;
+        font-weight: 700;
+        font-size: 48px;
+        color: $colorWhite;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    &-content{
+        display: grid;
+        grid-template-columns: 0.79fr 1fr;
+    }
+    &-info{
+        max-width: 488px;
+        &--title{
+            font-family: $fontFamMontserrat;
+            font-weight: 400;
+            font-size: 36px;
+            color: $colorWhite;
+            text-align: center;
+            margin-bottom: 45px;
+        }
+        &--text{
+            font-family: 'Montserrat';
+            font-weight: 400;
+            font-size: 24px;
+            line-height: $lineMar;
+            color: $colorWhite;
+        }
+    }
+    &-img{
+        flex-wrap: wrap;
+        &--item{
+            transition: 0.3s ease;
+        }
+        &--item:nth-child(2){
+            margin-left: 20px;
+        }
+        &--item:nth-child(4){
+            margin-left: 20px;
+            margin-top: 20px;
+        }
+        &--item:hover{
+            transform: scale(1.11);
         }
     }
 }
