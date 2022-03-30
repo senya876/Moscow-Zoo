@@ -125,12 +125,12 @@ $lineMar: 200%;
     &-arrowLeft, &-arrowRight{
         cursor: pointer;
         position: absolute;
-        top: 319px;
+        top: 40%;
         padding: 65px 32px;
         color: $colorLightBlue;
         background: rgba(83, 106, 95, 0.53);
         font-size: 23px;
-        transition: 0.6s ease;
+        transition: 0.5s ease;
     }
     &-arrowRight{
         right: 0;
@@ -253,6 +253,9 @@ $lineMar: 200%;
         &:nth-child(2){
             background-color: $colorGreen;
         }
+        &:nth-child(3){
+            background-color: $colorGreen;
+        }
         &--title{
             font-family: $fontFamRoboto;
             font-weight: 700;
@@ -265,10 +268,13 @@ $lineMar: 200%;
             margin-bottom: 15px;
             width: 100%;
         }
-        &--textInfo{
+        &--textInfo---info{
             margin-bottom: 10px;
         }
-        &--textInfo, &--textList, &--item, &--button{
+        &--textInfo---infopad{
+            margin-bottom: 24px;
+        }
+        &--textInfo, &--textInfo---info, &--textList, &--item, &--button{
             font-family: $fontFamRoboto;
             font-weight: 400;
             font-size: 18px;
@@ -301,12 +307,46 @@ $lineMar: 200%;
         &--img_list{
             width: 100%;
             display: flex;
+            margin-bottom: 15px;
         }
+        &--img_item:nth-child(1){
+            padding-right: 8px;
+        }
+       
         &--photo{
-            width: 100%;     
+            width: 100%;
+            &:nth-child(2){
+                margin-top: 8px;
+            }     
+        }
+        &--bgc{
+            background-color: $colorBlue;
+            max-width: 623px;
+            padding: 30px 25px;
+            border-radius: 30px;
+            margin-bottom: 35px;
+        }
+        &--imgs{
+            margin-bottom: 15px;
+            width: 100%;
+            display: flex;
+            gap: 4px;
+            &---img{
+                width: 100%;
+                
+            }
+        }
+        &--textInfo a{
+            text-decoration: none;
+            color: $colorLightBlue;
+        }
+        --full{
+            width: 100%;
+            background-color: $colorLightGreen;
         }
     }
 }
+
 
 
 
