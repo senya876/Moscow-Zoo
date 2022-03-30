@@ -191,6 +191,7 @@ $lineMar: 200%;
         margin-bottom: 50px;
     }
     &-content{
+        flex-wrap: wrap;
         display: grid;
         grid-template-columns: 0.79fr 1fr;
     }
@@ -213,8 +214,9 @@ $lineMar: 200%;
         }
     }
     &-img{
-        flex-wrap: wrap;
+        width: 100%;
         &--item{
+            width: 100%;
             transition: 0.3s ease;
         }
         &--item:nth-child(2){
@@ -222,10 +224,15 @@ $lineMar: 200%;
         }
         &--item:nth-child(4){
             margin-left: 20px;
-            margin-top: 20px;
         }
         &--item:hover{
             transform: scale(1.11);
+        }
+        &--block{
+            display: flex;
+            &:nth-child(2){
+                margin-top: 20px;
+            }
         }
     }
 }
@@ -234,7 +241,9 @@ $lineMar: 200%;
     &-cards{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 30px;
+        &--right{
+            margin-left: 15px;
+        }
     }
     &-title{
         font-family: $fontFamMontserrat;
@@ -338,11 +347,46 @@ $lineMar: 200%;
         }
         &--textInfo a{
             text-decoration: none;
-            color: $colorLightBlue;
+            color: $colorBlue;
+            transition: 0.5s ease;
+            &:hover{
+                color: $colorLightBlue;
+            }
         }
-        --full{
+        &--full{
             width: 100%;
-            background-color: $colorLightGreen;
+            border-radius: 30px;
+            padding: 30px 25px;
+            background-color: $colorGreen;
+            & img{
+                margin-bottom: 20px;
+            }
+            &---allinfo{
+                display: grid;
+                grid-template-columns: 0.28fr 1fr;
+                gap: 36px;
+            }
+            &---title, &---text{
+                font-family: $fontFamRoboto;
+                font-size: 18px;
+                line-height: $lineMar;
+                color: $colorWhite;
+                margin-bottom: 10px;
+            }
+            &---title{
+                font-weight: 700;
+            }
+            &---text{
+                font-weight: 400;
+                & a{
+                    text-decoration: none;
+                    color: $colorBlue;
+                    transition: 0.5s ease;
+                    &:hover{
+                        color: $colorLightBlue;
+                    }
+                }
+            }
         }
     }
 }
