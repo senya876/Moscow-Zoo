@@ -104,6 +104,13 @@ $lineMar: 200%;
     }
     &__wrapper-about{
         padding-bottom: 100px;
+        width: 100%;
+    }
+    &__wrapper-services{
+        padding-bottom: 100px;
+    }
+    &__wrapper-contact{
+        padding-bottom: 100px;
     }
 }
 
@@ -177,10 +184,6 @@ $lineMar: 200%;
     }
 }
 
-.main__wrapper-about{
-    width: 100%;
-}
-
 .main__about{
     &-title{
         font-family: $fontFamMontserrat;
@@ -206,7 +209,7 @@ $lineMar: 200%;
             margin-bottom: 45px;
         }
         &--text{
-            font-family: 'Montserrat';
+            font-family: $fontFamMontserrat;
             font-weight: 400;
             font-size: 24px;
             line-height: $lineMar;
@@ -387,6 +390,65 @@ $lineMar: 200%;
                     }
                 }
             }
+        }
+    }
+}
+
+.main__wrapper-contact--info{
+    padding: 60px 80px;
+    background-color: $colorBlue;
+    border-radius: 30px;
+}
+
+.main__contact{
+    &-title{
+        font-family: $fontFamMontserrat;
+        font-weight: 700;
+        font-size: 48px;
+        color: $colorWhite;
+        margin-bottom: 45px;
+        text-align: center;
+    }
+    &-cards{
+        display: flex;
+        
+    }
+    &-card{
+        &:nth-child(1){
+            max-width: 505px;
+        }
+        &:nth-child(2){
+            max-width: 557px;
+            margin-left: 55px;
+        }
+        & a{
+            text-decoration: none;
+            color: $colorTextGreen;
+            transition: 0.5s ease;
+            &:hover{
+                color: $colorGreen;
+            }
+        }
+        &--title{
+            font-family: $fontFamMontserrat;
+            font-weight: 700;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        &--text{
+            font-family: $fontFamRoboto;
+            font-weight: 400;
+            &---down{
+                margin-bottom: 25px;
+            }
+        }
+        &--title, &--text{
+            font-size: 18px;
+            line-height: $lineMar;
+            color: $colorWhite;
+        }
+        &--infoUp{
+            margin-bottom: 15px;
         }
     }
 }

@@ -116,6 +116,15 @@
 
 .main__wrapper-about {
   padding-bottom: 100px;
+  width: 100%;
+}
+
+.main__wrapper-services {
+  padding-bottom: 100px;
+}
+
+.main__wrapper-contact {
+  padding-bottom: 100px;
 }
 
 .main__slider {
@@ -213,10 +222,6 @@
   }
 }
 
-.main__wrapper-about {
-  width: 100%;
-}
-
 .main__about-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
@@ -249,7 +254,7 @@
 }
 
 .main__about-info--text {
-  font-family: 'Montserrat';
+  font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 200%;
@@ -479,5 +484,72 @@
 
 .main__services-card--full---text a:hover {
   color: #82A1CF;
+}
+
+.main__wrapper-contact--info {
+  padding: 60px 80px;
+  background-color: #466188;
+  border-radius: 30px;
+}
+
+.main__contact-title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.main__contact-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main__contact-card:nth-child(1) {
+  max-width: 505px;
+}
+
+.main__contact-card:nth-child(2) {
+  max-width: 557px;
+  margin-left: 55px;
+}
+
+.main__contact-card a {
+  text-decoration: none;
+  color: #76C1A2;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main__contact-card a:hover {
+  color: #5A8D79;
+}
+
+.main__contact-card--title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.main__contact-card--text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+.main__contact-card--text---down {
+  margin-bottom: 25px;
+}
+
+.main__contact-card--title, .main__contact-card--text {
+  font-size: 18px;
+  line-height: 200%;
+  color: #ffffff;
+}
+
+.main__contact-card--infoUp {
+  margin-bottom: 15px;
 }
 /*# sourceMappingURL=style.css.map */
