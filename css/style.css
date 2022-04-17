@@ -679,6 +679,75 @@
   fill: #000000a9;
 }
 
+.main-lectures--wrapper {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.main_lectures-title {
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.main_lectures-info {
+  padding: 35px 20px;
+  background-color: #466188;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.main_lectures-info--text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  color: #ffffff;
+  margin-bottom: 4px;
+}
+
+.main_lectures-info--spantext {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 200%;
+  color: #76C1A2;
+}
+
+.main_lectures-info--spantext span a {
+  text-decoration: none;
+  color: #82A1CF;
+}
+
+.main_lectures-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 10px;
+  padding: 35px 25px;
+  margin-bottom: 30px;
+  background-color: #466188;
+}
+
+.main_lectures-card--info {
+  margin-left: 25px;
+}
+
+.main_lectures-card--info---title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #76C1A2;
+  margin-bottom: 25px;
+}
+
+.main_lectures-card--info---text {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  line-height: 200%;
+  color: #ffffff;
+}
+
 @media all and (max-width: 1310px) {
   .container {
     padding-left: 20px;
