@@ -281,7 +281,7 @@ $lineMar: 200%;
             margin-bottom: 10px;
         }
         &--textInfo---infopad{
-            margin-bottom: 24px;
+            margin-bottom: 16px;
         }
         &--textInfo, &--textInfo---info, &--textList, &--item, &--button{
             font-family: $fontFamRoboto;
@@ -291,28 +291,42 @@ $lineMar: 200%;
             color: $colorWhite;
         }
         &--list{
-            margin: 6px 0px 24px 40px;
+            margin: 6px 0px 9px 40px;
             
         }
         &--item{
             margin-bottom: 14px;
         }
-        &--button{
-            width: 100%;
-            background-color: $colorLightBlue;
-            border-radius: 10px;
-            border: none;
-            padding-top: 10px;
-            padding-bottom: 10px;
-            cursor: pointer;
-            transition: 0.3s ease;
-            &:hover{
-                background-color: $colorLightGreen;
-            }
-            &:active{
-                background-color: $colorGreen;
+        &--link{
+            font-family: $fontFamRoboto;
+            font-size: 18px;
+            line-height: $lineMar;
+            color: $colorWhite;
+            & a{
+                text-decoration: none;
+                color: $colorTextGreen;
+                transition: 0.5s ease;
+                &:hover{
+                    color: $colorGreen;
+                }
             }
         }
+        // &--button{
+        //     width: 100%;
+        //     background-color: $colorLightBlue;
+        //     border-radius: 10px;
+        //     padding-top: 10px;
+        //     padding-bottom: 10px;
+        //     border:none;
+        //     cursor: pointer;
+        //     transition: 0.3s ease;
+        //     &:hover{
+        //         background-color: $colorLightGreen;
+        //     }
+        //     &:active{
+        //         background-color: $colorGreen;
+        //     }
+        // }
         &--img_list{
             width: 100%;
             display: flex;
@@ -688,6 +702,7 @@ $lineMar: 200%;
 
 
 @import "_lectures.scss";
+@import "_types-of-animals.scss";
 
 
 
