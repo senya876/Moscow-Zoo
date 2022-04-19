@@ -3,4 +3,44 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    &-typesanimals{
+        &--title{
+            text-align: center;
+            font-family: $fontFamRoboto;
+            font-size: 40px;
+            color: $colorWhite;
+            margin-bottom: 30px;
+        }
+        &--cards{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            row-gap: 25px;
+        }
+        &--card{
+            position: relative;
+            background: #000;
+            overflow: hidden;
+            border-radius: 10px;
+            &---img{
+                width: 100%;
+                border-radius: 10px;
+                transition: 0.5s ease;
+                display: block;
+                &:hover {
+                    opacity: 0.8; 
+                    transform: scale(1.07);
+                }
+            }
+            &---text{
+                position: absolute;
+                top: 20px;
+                left: 20px;
+                font-family: $fontFamMontserrat;
+                font-weight: 400;
+                font-size: 32px;
+                color: $colorWhite;
+            }
+        }
+    }
 }

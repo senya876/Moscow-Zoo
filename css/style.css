@@ -757,6 +757,54 @@
   padding-bottom: 50px;
 }
 
+.main-typesanimals--title {
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 40px;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.main-typesanimals--cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  row-gap: 25px;
+}
+
+.main-typesanimals--card {
+  position: relative;
+  background: #000;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.main-typesanimals--card---img {
+  width: 100%;
+  border-radius: 10px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  display: block;
+}
+
+.main-typesanimals--card---img:hover {
+  opacity: 0.8;
+  -webkit-transform: scale(1.07);
+          transform: scale(1.07);
+}
+
+.main-typesanimals--card---text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 32px;
+  color: #ffffff;
+}
+
 @media all and (max-width: 1310px) {
   .container {
     padding-left: 20px;
