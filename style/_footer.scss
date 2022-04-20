@@ -1,0 +1,101 @@
+.footer{
+    background-color: $colorBlue;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    &__wrapper{
+        display: flex;
+    }
+}
+
+.footer__menu{
+    &-list{
+        list-style-type: none;
+        margin-top: 30px;
+    }
+    &-item{
+        list-style-type: none;
+        margin-bottom: 25px;
+        &:last-child{
+            margin-bottom: 0px;
+        }
+    }
+    &-link{
+        font-size: 14px;
+        margin: 0;
+    }
+}
+
+.footer__info{
+    padding-top: 10px;
+    margin: 0 auto;
+    &-faq{
+        max-width: 909px;
+    }
+    &-social{
+        margin: 0 auto;
+        max-width: 340px;
+        margin-bottom: 39px;
+        &--title, &--text{ 
+            font-family: $fontFamRoboto;
+            line-height: $lineMar;
+            color: $colorWhite;
+        }
+        &--title{
+            margin-bottom: 20px;
+            text-align: center;
+            font-weight: 700;
+            font-size: 18px;
+        }
+        &--text{
+            font-weight: 400;
+            font-size: 14px;
+        }
+        &--list{
+            list-style-type: none;
+            display: flex;
+            justify-content: space-between;
+        }
+        &--link{
+            text-decoration: none;
+        }
+        &--svg{
+            width: 40px;
+            height: 40px;
+            &---telegram{
+                fill: #229ED9;
+                transition: 0.5s ease;
+                &:hover{
+                    fill: #229fd9a9;
+                }
+            }
+            &---vk{
+                fill: #0077FF;
+                transition: 0.5s ease;
+                &:hover{
+                    fill: #0077ffa9;
+                }
+            }
+            &---pinterest{
+                fill: #E60023;
+                transition: 0.5s ease;
+                &:hover{
+                    fill: #e60023a9;
+                }
+            }
+            &---watsapp{
+                fill: #25D366;
+                transition: 0.5s ease;
+                &:hover{
+                    fill: #25d365a9;
+                }
+            }
+            &---tiktok{
+                fill: #000000;
+                transition: 0.5s ease;
+                &:hover{
+                    fill: #000000a9;
+                }
+            }
+        }
+    }
+}
