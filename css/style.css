@@ -852,12 +852,6 @@
   padding-bottom: 60px;
 }
 
-.main ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
 @media all and (max-width: 1310px) {
   .container {
     padding-left: 20px;
