@@ -56,7 +56,7 @@
   color: #76C1A2;
 }
 
-.header__link:focus {
+.header__link:active {
   color: #76C1A2;
 }
 
