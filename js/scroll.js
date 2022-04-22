@@ -38,4 +38,30 @@ links.forEach((elem) => {
             
         });
     }
+    if (elem.textContent.trim() === 'Контакты'){
+        elem.addEventListener('click' , (e) => {
+            e.preventDefault();
+            if (htmlName() === 'index.html'){
+                const contact = document.querySelector('#contact'); 
+                scrollToelement(contact);
+            } else{
+                window.location.href='index.html';
+                localStorage.setItem('toElement', JSON.stringify({element: "#contact"}));
+            }
+            
+        });
+    }
+    if (elem.textContent.trim() === 'Услуги'){
+        elem.addEventListener('click' , (e) => {
+            e.preventDefault();
+            if (htmlName() === 'index.html'){
+                const services = document.querySelector('#services'); 
+                scrollToelement(services);
+            } else{
+                window.location.href='index.html';
+                localStorage.setItem('toElement', JSON.stringify({element: "#services"}));
+            }
+            
+        });
+    }
 })
