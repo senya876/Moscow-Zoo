@@ -115,12 +115,12 @@ $lineMar: 200%;
       .menu__btn {
         position: fixed;
         top: 30px;
-        left: 923px;
+        left: 940px;
         width: 40px;
         height: 40px;
         cursor: pointer;
         z-index: 2;
-        background-color: $colorLightBlue;
+        background-color: rgb(47, 67, 131);
         border-radius: 5px;
       }
       .menu__btn > span{
@@ -156,4 +156,671 @@ $lineMar: 200%;
         transition-duration: .25s;
         z-index: 1;
       }
+    .main__contact-title{
+      font-size: 24px;
+    }
+    .main__contact-card--title{
+      font-size: 16px;
+    }
+    .main__contact-card--text{
+      font-size: 12px;
+    }
+    .main-typesanimals--title{
+      font-size: 28px;
+    }
+    .main-typesanimals--cards{
+      display: block;
+    } 
+    .main-typesanimals--card{
+      margin-bottom: 20px;
+    } 
+    .main-typesanimals--card---text{
+      font-size: 24px;
+    }
+    .main-animals--title{
+      font-size: 24px;
+      margin-bottom: 35px;
+    }
+    .main_lectures-title{
+      font-size: 24px;
+      margin-bottom: 35px;
+    }
+    .main_lectures-info--text{
+      font-size: 14px;
+    }
+    .main_lectures-info {
+      padding: 20px 20px;
+    }
+    .main_lectures-card--info---title{
+      font-size: 18px;
+      margin-bottom: 5px;
+      text-align: center;
+    }
+    .main_lectures-card--info---text{
+      font-size: 14px;
+    }
+    .main_lectures-card--img{
+      border-radius: 10px;
+    }
+}
+
+
+
+@media (max-width: 768px){
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 708px;
+  }
+  .menu__box {
+    position: fixed;
+    top: 0;
+    right: -900px;
+    height: 100%;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 450px !important;
+  }
+  .main__slider-arrowRight, .main__slider-arrowLeft{
+    top: 35%;
+    padding: 45px 25px;
+    background: rgba(83, 106, 95, 0.53);
+    font-size: 23px;
+    transition: 0.5s ease;
+  }
+  .main__slider-dots{
+    bottom: 25px;
+    left: 27%;
+    position: absolute;
+  }
+  .main__about-info--title{
+    font-size: 24px;
+    margin-bottom: 25px;
+  }
+  .main__about-info--text{
+    font-size: 16px;
+  }
+  .main__about-info--svg{
+    width: 320px;
+    height: 100px;
+  }
+  .main__about-img--item{
+    height: 120px;
+  }
+  .main__about-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-card--title{
+    font-size: 22px;
+  }
+  .main__services-card--textInfo---info, .main__services-card--textList, .main__services-card--item, .main__services-card--link, .main__services-card--textInfo, .main__services-card--full---text, .main__services-card--full---title{
+    font-size: 14px;
+  }
+  .main__services-card--textInfo---infopad{
+    margin-bottom: 0px;
+  }
+  .main__services-card{
+    margin-bottom: 25px;
+  }
+  .main__services-card--bgc{
+    margin-bottom: 45px;
+  }
+  .main__wrapper-contact--info{
+    padding: 40px 60px;
+  }
+  .main__contact-title{
+    margin-bottom: 30px;
+  }
+  .main__contact-card--title{
+    font-size: 14px;
+  }
+  .main__contact-card:nth-child(2) {
+    margin-left: 35px;
+  }
+  .footer__info-social--text{
+    font-size: 12px;
+  }
+  .footer__info-social--title{
+    margin-bottom: 8px;
+  }
+  .main-typesanimals--card---text{
+    font-size: 18px;
+  }
+  .main-typesanimals--title{
+    font-size: 28px;
+  }
+  .main-typesanimals--cards{
+    display: block;
+  } 
+  .main-typesanimals--card{
+    margin-bottom: 20px;
+  } 
+  .main-typesanimals--card---text{
+    font-size: 24px;
+  }
+  .main-animals--title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main-animals--cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  .main_lectures-title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main_lectures-info--text{
+    font-size: 14px;
+  }
+  .main_lectures-info {
+    padding: 20px 20px;
+  }
+  .main_lectures-card{
+    display: block;
+  }
+  .main_lectures-card--info{
+    margin-left: 0px;
+  }
+  .main_lectures-card--info---title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .main_lectures-card--info---text{
+    font-size: 14px;
+  }
+  .main_lectures-card--img{
+    margin-bottom: 15px;
+  }
+}
+
+
+
+@media (max-width: 600px){
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 540px;
+  }
+  .menu__box {
+    position: fixed;
+    top: 0;
+    right: -900px;
+    height: 100%;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 282px !important;
+  }
+  .main__slider-arrowRight, .main__slider-arrowLeft{
+    top: 37%;
+    padding: 25px 15px;
+    background: rgba(83, 106, 95, 0.53);
+    font-size: 23px;
+    transition: 0.5s ease;
+  }
+  .main__slider-dots{
+    bottom: 25px;
+    left: 20%;
+    position: absolute;
+  }
+  .main__slider-itemDots{
+    width: 13px;
+    height: 13px;
+  }
+  .main__about-info--title{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .main__about-info--text{
+    font-size: 16px;
+  }
+  .main__about-content{
+    grid-template-columns: 0.5fr 1fr;
+  }
+  .main__about-img--block{
+    gap: 16px 10px;
+  }
+  .main__about-info--svg{
+    width: 320px;
+    height: 100px;
+  }
+  .main__about-img--item{
+    height: 120px;
+  }
+  .main__about-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-card--title{
+    font-size: 22px;
+  }
+  .main__services-card--textInfo---info, .main__services-card--textList, .main__services-card--item, .main__services-card--link, .main__services-card--textInfo, .main__services-card--full---text, .main__services-card--full---title{
+    font-size: 14px;
+  }
+  .main__services-card--textInfo---infopad{
+    margin-bottom: 0px;
+  }
+  .main__services-card{
+    margin-bottom: 25px;
+  }
+  .main__services-card--bgc{
+    margin-bottom: 45px;
+  }
+  .main__wrapper-contact--info{
+    padding: 20px 40px;
+  }
+  .main__contact-title{
+    margin-bottom: 30px;
+  }
+  .main__contact-card--title{
+    font-size: 14px;
+  }
+  .main__contact-card:nth-child(2) {
+    margin-left: 35px;
+  }
+  .footer__info-social--text{
+    font-size: 12px;
+  }
+  .footer__info-social--title{
+    margin-bottom: 8px;
+  }
+  .main-typesanimals--title{
+    font-size: 28px;
+  }
+  .main-typesanimals--cards{
+    display: block;
+  } 
+  .main-typesanimals--card{
+    margin-bottom: 20px;
+  } 
+  .main-typesanimals--card---text{
+    font-size: 24px;
+  }
+  .main-animals--title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main-animals--cards{
+    grid-template-columns: 1fr 1fr;
+  }
+  .main_lectures-title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main_lectures-info--text{
+    font-size: 14px;
+  }
+  .main_lectures-info {
+    padding: 20px 20px;
+  }
+  .main_lectures-card{
+    display: block;
+  }
+  .main_lectures-card--info{
+    margin-left: 0px;
+  }
+  .main_lectures-card--info---title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .main_lectures-card--info---text{
+    font-size: 14px;
+  }
+  .main_lectures-card--img{
+    margin-bottom: 15px;
+  }
+}
+
+
+
+@media (max-width: 480px){
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 420px;
+  }
+  .menu__box {
+    position: fixed;
+    top: 0;
+    right: -900px;
+    height: 100%;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 162px !important;
+  }
+  .main__slider-arrowRight, .main__slider-arrowLeft{
+    top: 35%;
+    padding: 20px 10px;
+    background: rgba(83, 106, 95, 0.53);
+    font-size: 18px;
+    transition: 0.5s ease;
+  }
+  .main__slider-dots{
+    bottom: 25px;
+    left: 15%;
+    position: absolute;
+  }
+  .main__slider-itemDots{
+    width: 13px;
+    height: 13px;
+  }
+  .main__about-info--title{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .main__about-info--text{
+    font-size: 16px;
+  }
+  .main__about-content{
+    display: block;
+  }
+  .main__about-img--block{
+    gap: 16px 10px;
+  }
+  .main__about-info--svg{
+    width: 320px;
+    height: 100px;
+    margin-left: 70px;
+  }
+  .main__about-img--item{
+    height: 120px;
+  }
+  .main__about-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-card--title{
+    font-size: 22px;
+  }
+  .main__services-card--textInfo---info, .main__services-card--textList, .main__services-card--item, .main__services-card--link, .main__services-card--textInfo, .main__services-card--full---text, .main__services-card--full---title{
+    font-size: 14px;
+  }
+  .main__services-card--textInfo---infopad{
+    margin-bottom: 0px;
+  }
+  .main__services-card{
+    margin-bottom: 25px;
+  }
+  .main__services-cards--right{
+    margin-left: 0px;
+  }
+  .main__services-card--full---allinfo{
+    display: block;
+  }
+  .main__services-cards{
+    display: block;
+  }
+  .main__services-card--bgc{
+    margin-bottom: 25px;
+  }
+  .main__wrapper-contact--info{
+    padding: 20px 40px;
+  }
+  .main__contact-title{
+    margin-bottom: 30px;
+  }
+  .main__contact-card--title{
+    font-size: 14px;
+  }
+  .main__contact-card:nth-child(2) {
+    margin-left: 0px;
+  }
+  .main__contact-cards{
+    display: block;
+  }
+  .main__contact-card--text{
+    margin-bottom: 15px;
+  }
+  .footer__info-social--text{
+    font-size: 12px;
+  }
+  .footer__info-social--title{
+    margin-bottom: 8px;
+  }
+  .main-typesanimals--title{
+    font-size: 24px;
+  }
+  .main-typesanimals--cards{
+    display: block;
+  } 
+  .main-typesanimals--card{
+    margin-bottom: 20px;
+  } 
+  .main-typesanimals--card---text{
+    font-size: 24px;
+  }
+  .main-animals--title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main-animals--cards{
+    display: block;
+  }
+  .main-animals--card{
+    margin-bottom: 40px;
+  }
+  .main_lectures-title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main_lectures-info--text{
+    font-size: 14px;
+  }
+  .main_lectures-info {
+    padding: 20px 20px;
+  }
+  .main_lectures-card{
+    display: block;
+  }
+  .main_lectures-card--info{
+    margin-left: 0px;
+  }
+  .main_lectures-card--info---title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .main_lectures-card--info---text{
+    font-size: 14px;
+  }
+  .main_lectures-card--img{
+    margin-bottom: 15px;
+  }
+}
+
+
+
+
+@media (max-width: 320px){
+  .menu__btn {
+    position: fixed;
+    top: 30px;
+    left: 260px;
+  }
+  .menu__box {
+    position: fixed;
+    top: 0;
+    right: -900px;
+    height: 100%;
+  }
+  #menu__toggle:checked ~ .menu__box {
+    left: 0px !important;
+  }
+  .main__slider-arrowRight, .main__slider-arrowLeft{
+    top: 35%;
+    padding: 20px 10px;
+    background: rgba(83, 106, 95, 0.53);
+    font-size: 18px;
+    transition: 0.5s ease;
+  }
+  .main__slider-dots{
+    bottom: 15px;
+    left: 15%;
+    position: absolute;
+  }
+  .main__slider .active, .main__slider-itemDots:active{
+    width: 11px;
+    height: 11px;
+  }
+  .main__slider-itemDots{
+    width: 9px;
+    height: 9px;
+    margin: 0 5px;
+  }
+  .main__about-info--title{
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  .main__about-info--text{
+    font-size: 16px;
+  }
+  .main__about-content{
+    display: block;
+  }
+  .main__about-img--block{
+    gap: 16px 10px;
+  }
+  .main__about-info--svg{
+    width: 220px;
+    height: 100px;
+    margin-left: 30px;
+  }
+  .main__about-img--item{
+    height: 120px;
+  }
+  .main__about-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-title{
+    font-size: 36px;
+    margin-bottom: 35px;
+  }
+  .main__services-card--title{
+    font-size: 22px;
+  }
+  .main__services-card--textInfo---info, .main__services-card--textList, .main__services-card--item, .main__services-card--link, .main__services-card--textInfo, .main__services-card--full---text, .main__services-card--full---title{
+    font-size: 14px;
+  }
+  .main__services-card--textInfo---infopad{
+    margin-bottom: 0px;
+  }
+  .main__services-card{
+    margin-bottom: 25px;
+    border-radius: 10px;
+  }
+  .main__services-card--full{
+    border-radius: 10px;
+  }
+  .main__services-cards--right{
+    margin-left: 0px;
+  }
+  .main__services-card--full---allinfo{
+    display: block;
+  }
+  .main__services-cards{
+    display: block;
+  }
+  .main__services-card--bgc{
+    margin-bottom: 25px;
+  }
+  .main__wrapper-contact--info{
+    padding: 20px 40px;
+  }
+  .main__contact-title{
+    margin-bottom: 30px;
+  }
+  .main__contact-card--title{
+    font-size: 14px;
+  }
+  .main__contact-card:nth-child(2) {
+    margin-left: 0px;
+  }
+  .main__contact-cards{
+    display: block;
+  }
+  .main__contact-card--text{
+    margin-bottom: 15px;
+  }
+  .main__services-card--bgc{
+    border-radius: 10px;
+  }
+  .main__wrapper-contact--info{
+    border-radius: 10px;
+  }
+  .footer__info-social--text{
+    font-size: 12px;
+  }
+  .footer__info-social--title{
+    margin-bottom: 8px;
+  }
+  .footer__info{
+    margin-top: 20px;
+  }
+  .footer__wrapper{
+    display: block;
+  }
+  .main-typesanimals--title{
+    font-size: 24px;
+  }
+  .main-typesanimals--cards{
+    display: block;
+  } 
+  .main-typesanimals--card{
+    margin-bottom: 20px;
+  } 
+  .main-typesanimals--card---text{
+    font-size: 18px;
+  }
+  .main-animals--title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main-animals--cards{
+    display: block;
+  }
+  .main-animals--card{
+    margin-bottom: 40px;
+  }
+  .main_lectures-title{
+    font-size: 24px;
+    margin-bottom: 35px;
+  }
+  .main_lectures-info--text{
+    font-size: 14px;
+  }
+  .main_lectures-info {
+    padding: 20px 20px;
+  }
+  .main_lectures-card{
+    display: block;
+  }
+  .main_lectures-card--info{
+    margin-left: 0px;
+  }
+  .main_lectures-card--info---title{
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+  }
+  .main_lectures-card--info---text{
+    font-size: 14px;
+  }
+  .main_lectures-card--img{
+    margin-bottom: 15px;
+  }
 }
