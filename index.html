@@ -8,42 +8,38 @@
     <title>Московский Зоопарк</title>
 </head>
 <body>
-    
-    <header class="header">
-        <div class="hamburger-menu">
-            <input id="menu__toggle" type="checkbox" />
-            <label class="menu__btn" for="menu__toggle">
-              <span></span>
-            </label>
-        
-            <ul class="menu__box ">
-                <li class="header__item">
-                    <a href="index.html" class="header__link">Главная</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link links">Услуги</a>
-                </li>
-                <li class="header__item">
-                    <a href="types-of-animals.html" class="header__link">Виды животных</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link links">Контакты</a>
-                </li>
-                <li class="header__item">
-                    <a href="#" class="header__link links">О нас</a>
-                </li>
-                <nav class="header-buttons--burger">
-                    <button class="header__button header__button-enter">Войти</button>
-                    <button class="header__button header__button-registration">Регистрация</button>
-                </nav> 
-            </ul>
-             
+    <div id="modal-container">
+        <div class="modal-background">
+            <div class="modal">
+                <div class="modal__controls">
+                    <h2 class="modal__title">
+                        Личный кабинет / вход
+                    </h2>
+                    <button class="modal__close-button"></button>
+                </div>
+                <form class="modal__form" id="auth-form">
+                    <div class="modal__inputs">
+                        <input type="email" class="modal__input" id="email-input" name="" placeholder="Введите почту..." required>
+                        <input type="password" class="modal__input" id="password-input" name="" placeholder="Введите пароль..." onpaste="return false;" required>
+                    </div>
+                    <input type="checkbox" id="entering" class="modal__agreement-input" name="checkbox">
+                    <label for="entering" class="modal__agreement-label">
+                        <span>Запомнить вход</span>
+                    </label>
+                    <input type="submit" class="modal__submit" id="form-submit" value="Войти">
+                </form>
+            </div>
         </div>
-        <div class="container header__wrapper">
-            <a href="index.html" class="header__logo-link"><img src="./images/logo.png" alt="#" class="header__logo"></a>
+    </div>
+    <div class="wrapper">
+        <header class="header">
+            <div class="hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                  <span></span>
+                </label>
             
-            <nav class="header__wrapper-menu--navbar">
-                <ul class="header__list">
+                <ul class="menu__box ">
                     <li class="header__item">
                         <a href="index.html" class="header__link">Главная</a>
                     </li>
@@ -59,262 +55,291 @@
                     <li class="header__item">
                         <a href="#" class="header__link links">О нас</a>
                     </li>
+                    <nav class="header-buttons--burger">
+                        <button class="header__button header__button-enter">Войти</button>
+                        <button class="header__button header__button-registration">Регистрация</button>
+                    </nav> 
                 </ul>
-            </nav>
-            <nav class="header-buttons">
-                <button class="header__button header__button-enter">Войти</button>
-                <button class="header__button header__button-registration">Регистрация</button>
-            </nav>    
-        </div>
-    </header>
-    <main class="main">
-        <div class="container main__wrapper-slider">
-            <div class="main__slider">
-                <ul class="main__slider-list">
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_Sg_OwwU2Z9o.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_eEMm5-KDHms.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_UgidX4V13Gc.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_GuoDDPeQtdM.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_XvaaB8jpSoQ.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_VnfxB43Zp5Q.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_0J70eDz8YpM.png" alt="#" class="main__slider-img">
-                    </li>
-                    <li class="main__slider-item">
-                        <img src="images/unsplash_zTGzwYKXC-A.png" alt="#" class="main__slider-img">
-                    </li>
-                </ul>
-                <a class="main__slider-arrowLeft" onclick="backSlide(-1)">&#10094;</a>
-                <a class="main__slider-arrowRight" onclick="nextSlide(1)">&#10095;</a>
-                <div class="main__slider-dots">
-                    <span class="main__slider-itemDots" onclick="currentSlide(1)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(2)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(3)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(4)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(5)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(6)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(7)"></span>
-                    <span class="main__slider-itemDots" onclick="currentSlide(8)"></span>
-                </div>
+                 
             </div>
-        </div>
-        <div id="about" class="container main__wrapper-about">
-            <h1 class="main__about-title">О нас</h1>
-            <div class="main__about-content">
-                <div class="main__about-info">
-                    <h3 class="main__about-info--title">Московский Зоопарк</h3>
-                    <p class="main__about-info--text">Наш зоопарк признан лучшим в России, здесь вы можете увидеть самых редких животных которые занесены в красную книгу, посетить множество различных лекций, поучавствовать в конкурсах и викторинах.</p>
-                    <svg width="488" height="287" viewBox="0 0 488 287" fill="none" xmlns="http://www.w3.org/2000/svg" class="main__about-info--svg">
-                        <g clip-path="url(#clip0_213_1499)">
-                            <path d="M73.9706 176.543C67.7512 175.587 61.827 171.614 57.7633 165.684C53.0366 158.885 49.7066 145.078 56.0677 138.001C57.9594 135.896 60.4655 134.808 63.3454 134.844C70.5874 134.925 77.9242 142.116 81.6278 146.391C82.5956 147.529 83.6326 148.637 84.597 149.727C90.7199 156.467 97.615 164.088 91.6208 170.756C91.165 171.264 90.6601 171.774 90.0075 172.247C85.1287 175.975 79.5977 177.442 73.9706 176.543ZM132.682 120.45C130.992 120.98 129.515 121.96 128.284 123.329C122.768 129.465 123.432 142.165 124.649 146.425C127.333 156.011 130.723 167.944 144.299 167.108C149.349 166.8 153.695 164.637 157.205 160.733C158.71 159.059 160.045 157.063 161.159 154.788C163.723 149.675 162.511 145.507 160.682 139.203L160.358 138.116C158.907 132.989 155.9 129.437 151.201 125.075C147.113 121.283 141.967 117.48 132.682 120.45ZM113.051 146.663C113.396 146.33 113.692 146 114.081 145.615C122.08 136.715 116.956 123.931 108.792 115.81C103.99 111.052 96.7504 108.192 89.8899 108.351C85.1485 108.475 81.2044 110.036 78.7862 112.726C72.0172 120.257 79.4404 128.686 85.9814 136.14L87.7015 138.089C94.5149 145.909 99.8153 149.49 104.931 149.773C107.892 149.924 110.699 148.867 113.051 146.663ZM108.426 201.866C108.236 198.838 106.513 188.595 92.923 183.06C88.3116 181.19 74.1245 179.405 67.9731 186.249C67.4033 186.883 66.9096 187.581 66.543 188.303C61.9343 197.093 72.2118 209.965 76.2519 213.407C81.8886 218.21 88.401 219.818 94.5968 217.978C96.5028 217.408 101.345 215.673 104.857 211.765C107.453 208.873 108.658 205.471 108.426 201.866ZM160.575 171.663C153.138 172.674 141.884 174.23 133.109 173.067C132.164 172.933 131.164 172.707 130.09 172.46C126.008 171.49 119.824 170.031 115.724 174.592C115.519 174.82 115.34 175.071 115.092 175.347C112.783 178.529 113.342 182.234 114.126 187.335C115.004 193.008 116.226 200.766 114.653 212.765C112.959 225.564 117.605 232.608 130.751 237.137C138.777 239.905 146.002 238.047 151.678 231.734C154.848 228.207 156.961 224.007 158.458 220.94C159.039 219.778 159.751 218.374 159.907 218.149C160.65 217.523 163.308 216.117 165.674 214.869C171.151 211.964 178.006 208.361 181.424 204.558C186.872 198.498 186.993 188.885 184.251 182.613C182.193 177.949 178.779 170.159 166.699 170.922C165.327 171.011 163.208 171.309 160.575 171.663Z" fill="#A8D8C4"/>
-                        </g>
-                        <g clip-path="url(#clip1_213_1499)">
-                            <path d="M414.029 118.477C420.249 117.521 426.173 113.548 430.237 107.618C434.963 100.819 438.293 87.0119 431.932 79.935C430.041 77.8305 427.534 76.742 424.655 76.7779C417.413 76.859 410.076 84.0506 406.372 88.3257C405.404 89.4637 404.367 90.5712 403.403 91.6615C397.28 98.4009 390.385 106.022 396.379 112.691C396.835 113.198 397.34 113.708 397.993 114.182C402.871 117.91 408.402 119.376 414.029 118.477ZM355.318 62.384C357.008 62.9143 358.485 63.894 359.716 65.2632C365.232 71.3994 364.568 84.099 363.351 88.3596C360.667 97.9454 357.277 109.878 343.701 109.043C338.651 108.734 334.305 106.572 330.795 102.667C329.29 100.993 327.955 98.9973 326.841 96.7226C324.276 91.6089 325.489 87.4416 327.318 81.1372L327.642 80.0505C329.093 74.923 332.1 71.3715 336.799 67.0092C340.887 63.2176 346.033 59.4146 355.318 62.384ZM374.949 88.597C374.604 88.2643 374.308 87.9347 373.919 87.5491C365.92 78.6491 371.044 65.8649 379.208 57.7445C384.01 52.9861 391.25 50.1264 398.11 50.2853C402.851 50.4096 406.796 51.9698 409.214 54.6601C415.983 62.1909 408.56 70.6203 402.019 78.0741L400.298 80.0233C393.485 87.8436 388.185 91.4239 383.069 91.7078C380.108 91.8584 377.301 90.8017 374.949 88.597ZM379.574 143.801C379.764 140.773 381.487 130.529 395.077 124.994C399.688 123.125 413.875 121.339 420.027 128.183C420.597 128.817 421.09 129.516 421.457 130.238C426.066 139.027 415.788 151.899 411.748 155.341C406.111 160.144 399.599 161.753 393.403 159.912C391.497 159.342 386.655 157.607 383.143 153.7C380.547 150.807 379.342 147.406 379.574 143.801ZM327.425 113.597C334.862 114.609 346.116 116.164 354.891 115.001C355.836 114.868 356.836 114.642 357.91 114.394C361.992 113.424 368.176 111.965 372.276 116.527C372.481 116.755 372.66 117.005 372.908 117.282C375.217 120.464 374.658 124.168 373.874 129.27C372.996 134.943 371.774 142.7 373.347 154.699C375.041 167.498 370.395 174.542 357.249 179.071C349.223 181.84 341.998 179.982 336.322 173.668C333.152 170.141 331.039 165.941 329.542 162.874C328.961 161.713 328.249 160.308 328.093 160.083C327.35 159.458 324.692 158.051 322.326 156.803C316.849 153.898 309.994 150.295 306.576 146.492C301.128 140.432 301.007 130.819 303.749 124.547C305.807 119.883 309.221 112.093 321.301 112.856C322.672 112.946 324.792 113.244 327.425 113.597Z" fill="#A8D8C4"/>
-                        </g>
-                        <defs>
-                            <clipPath id="clip0_213_1499">
-                                <rect width="163.65" height="165.33" fill="white" transform="matrix(0.668495 -0.743717 0.761169 0.648554 0 179.775)"/>
-                            </clipPath>
-                            <clipPath id="clip1_213_1499">
-                                <rect width="163.65" height="165.33" fill="white" transform="matrix(-0.668495 -0.743717 -0.761169 0.648554 488 121.709)"/>
-                            </clipPath>
-                        </defs>
-                    </svg>
-                </div>
-                <div class="main__about-img">
-                    <div class="main__about-img--block">
-                        <img src="images/unsplash_nOo6WHb0BUk.png" alt="#" class="main__about-img--item">
-                        <img src="images/unsplash_q7pOFt3J0ks.png" alt="#" class="main__about-img--item">
-                        <img src="images/unsplash_3SBfM2-ytb8.png" alt="#" class="main__about-img--item">
-                        <img src="images/unsplash_LKREcvZeoJQ.png" alt="#" class="main__about-img--item">
-                        <img src="images/unsplash_pr1M1Y7zdik.png" alt="#" class="main__about-img--item">
-                        <img src="images/unsplash_y421kXlUOQk.png" alt="#" class="main__about-img--item">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="services" class="container main__wrapper-services">
-            <h1 class="main__services-title">Услуги</h1>
-            <div class="main__services-cards">
-                <div class="main__services-cards--left">
-                    <div class="main__services-card">
-                        <h3 class="main__services-card--title">Лекции</h3>
-                        <img src="images/image 46.png" alt="#" class="main__services-card--img">
-                        <p class="main__services-card--textInfo---info">На наших лекция вы сможете узнать большое количество информации о различных видах животных, как правильно кормить  домашних животных и ухаживать за ними.</p>
-                        <p class="main__services-card--textList">Список лекций:</p>
-                        <ul class="main__services-card--list">
-                            <li class="main__services-card--item">млекопитающие</li>
-                            <li class="main__services-card--item">птицы</li>
-                            <li class="main__services-card--item">рептилии</li>
-                            <li class="main__services-card--item">амфибии</li>
-                            <li class="main__services-card--item">рыбы</li>
-                            <li class="main__services-card--item">беспозвоночные</li>
-                        </ul>
-                        <p class="main__services-card--link">Если вы хотели бы узнать более подробнее о каждой лекции, нажмите <a href="lectures.html">подробнее...</a></p>
-                    </div>
-                    <div class="main__services-card">
-                        <h3 class="main__services-card--title">Экскурсии</h3>
-                        <img src="images/image 54.png" alt="#" class="main__services-card--img">
-                        <p class="main__services-card--textInfo---info">Доверьтесь нашим опытным экскурсоводам и вы откроете для себя совершенно новый, но такой же любимый Московский зоопарк. Вместе вы не просто совершите прогулку по зоопарку, но и узнаете много всего интересного о жизни и особенностях поведения наших питомцев, их повадках и характере, а  так же откроете для себя зоопарк с новой и удивительной стороны.</p>
-                        <p class="main__services-card--textInfo main__services-card--textInfo---infopad">Экскурсии проходят каждый день в 13:00 и 17:00  купить билет можно в кассе.</p>
-                    </div>
-                </div>
-                <div class="main__services-cards--right">
-                    <div class="main__services-card">
-                        <h3 class="main__services-card--title">Фотоссесия</h3>
-                        <div class="main__services-card--img_list">
-                            <div class="main__services-card--img_item">
-                                <img src="images/image 47.png" alt="#" class="main__services-card--photo">
-                                <img src="images/image 48.png" alt="#" class="main__services-card--photo">
-                            </div>
-                            <div class="main__services-card--img_item">
-                                <img src="images/image 49.png" alt="#" class="main__services-card--photo">
-                                <img src="images/image 50.png" alt="#" class="main__services-card--photo">
-                            </div>
-                        </div>
-                        <p class="main__services-card--textInfo">В зоопарке работают проффесиональные фотографы, к которым вы всегда можете подойти и попросить вас сфотографировать. </p>
-                        <p class="main__services-card--textList">Отдел фотографов находится в главном здании на первом этаже, стоимость одной фотографии 30р.</p>
-                    </div>
-                    <div class="main__services-card--bgc">
-                        <h3 class="main__services-card--title">Выставки</h3>
-                        <div class="main__services-card--imgs">
-                            <img src="images/image 52.png" alt="#" class="main__services-card--imgs---img">
-                            <img src="images/image 53.png" alt="#" class="main__services-card--imgs---img">
-                            <img src="images/image 51.png" alt="#" class="main__services-card--imgs---img">
-                        </div>
-                        <p class="main__services-card--textInfo">Так же раз в месяц у нас проходит конкурс выставки кошек, вы можете прийти со своим питомцем и поучаствовать. Победителю достанутся очень ценные призы, все участники получат подарки от зоопарка.</p>
-                        <p class="main__services-card--textInfo">Выставки проходят каждое 15 число месяца 14:00 в главном здании на первом этаже  </p>
-                    </div>
-                    <div class="main__services-card">
-                        <h3 class="main__services-card--title">Свадьбы</h3>
-                        <img src="images/image 55.png" alt="#" class="main__services-card--img">      
-                        <p class="main__services-card--textInfo">По вопросу заказа свадебного мероприятия вы можете обращаться к менеджеру по организации экскурсий:<br> 
-                            <a href="#">+7 (485)-674-32-21</a> или отправить заявку по e-mail: <a href="#">moskovskiyzoo@yandex.ru</a> </p>
-                    </div>
-                </div>
-            </div>
-            <div class="main__services-card--full">
-                <h3 class="main__services-card--title">Квесты</h3>
-                <img src="images/image 57.png" alt="#" class="main__services-card--img">      
-                <div class="main__services-card--full---allinfo">
-                    <span>
-                        <h5 class="main__services-card--full---title">«Пиратский квест»</h5>
-                        <p class="main__services-card--full---text">Возраст:  6+</p>
-                        <p class="main__services-card--full---text">Группа:  до 25 человек </p>
-                        <p class="main__services-card--full---text">Продолжительность:  1.5 часа</p>
-                        <p class="main__services-card--full---title">Стоимость участия в квесте:  300 рублей с человека</p>
-                    </span>
-                    <span>
-                        <p class="main__services-card--full---text">Наших юных следопытов ждут увлекательные приключения в поисках «Острова сокровищ». Прежде, чем они отправятся в путь по удивительным экспозициям зоопарка, им предстоит пройти посвящение в пираты.</p>
-                        <p class="main__services-card--full---text">Искателям приключений придется проявить смекалку, находчивость и сообразительность. А добрые обитатели зоопарка будут помогать нашим путешественникам, чтобы найти необходимые подсказки, ведущие к волшебному пиратскому сундуку. Внимание и наблюдательность, которой всегда славились удачливые следопыты, помогут ребятам не только достичь цели, но и узнать много интересных фактов из жизни животных!</p>
-                        <p class="main__services-card--full---text">По вопросу квеста  вы можете обращаться к менеджеру по организации экскурсий: <a href="#">+7 (485)-674-32-21</a> или отправить заявку по e-mail: <a href="#">moskovskiyzoo@yandex.ru</a></p>
-                    </span>
-                </div>
+            <div class="container header__wrapper">
+                <a href="index.html" class="header__logo-link"><img src="./images/logo.png" alt="#" class="header__logo"></a>
                 
-            </div>
-        </div>
-        <div id="contact" class="container main__wrapper-contact">
-            <div class="main__wrapper-contact--info"> 
-                <h1 class="main__contact-title">Контакты</h1>
-                <div class="main__contact-cards">
-                    <div class="main__contact-card">
-                        <div class="main__contact-card--infoUp">
-                            <h3 class="main__contact-card--title">Администрация (Приёмная директора)</h3>
-                            <p class="main__contact-card--text">Секретарь директора: <a href="#">+7 (485)-650-31-25</a>, 71-00-50 (факс) Электронная почта: <a href="#">mz@moscowzoo.ru</a></p>
-                        </div>
-                        <div class="main__contact-card--infoDown">
-                            <h3 class="main__contact-card--title">Отдел кадров</h3>
-                            <p class="main__contact-card--text"><a href="#">+7 (485)-650-55-24</a> / Электронная почта: <a href="#">mz@moscowzoo.ru</a> Приезжайте к нам:150007, Москва, ул. Шевелюха 137</p>
-                        </div>
-                    </div>
-                    <div class="main__contact-card">
-                        <div class="main__contact-card--infoUp">
-                            <h3 class="main__contact-card--title">Отдел маркетинга и продаж</h3>
-                            <p class="main__contact-card--text main__contact-card--text---down"><a href="#">+7 (485)-650-66-56</a> (Заказ экскурсий, квеста и свадеб в зоопарке)
-                                <a href="#">+7 (485)-650-34-11</a> (Партнерские программы и опека животных)
-                                <a href="#">+7 (485)-650-45-19</a> (Лекции)</p>
-                        </div>
-                        <div class="main__contact-card--infoDown">
-                            <p class="main__contact-card--text">Заказ экскурсий, квеста и свадеб и предложения по рекламе: <a href="#">moskovskiyzoo@yandex.ru</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
-    <footer class="footer">
-        <div class="container footer__wrapper">
-            <div class="footer__menu">
-                <a href="index.html" class="footer__menu-logo--link header__logo-link"><img src="./images/logo.png" alt="#" class="header__logo"></a>
-                <ul class="footer__menu-list">
-                    <li class="footer__menu-item">
-                        <a href="index.html" class="footer__menu-link header__link">Главная</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link header__link">Услуги</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="types-of-animals.html" class="footer__menu-link header__link">Виды животных</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="lectures.html" class="footer__menu-link header__link">Лекции</a>
-                    </li>
-                    <li class="footer__menu-item">
-                        <a href="#" class="footer__menu-link header__link">О нас</a>
-                    </li>
-                </ul>    
-            </div>
-            <div class="footer__info">
-                <div class="footer__info-social">
-                    <h3 class="footer__info-social--title">Наши соцсети</h3>
-                    <ul class="footer__info-social--list">
-                        <li class="footer__info-social--item">
-                            <a href="#" class="footer__info-social--link">
-                                <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;fill-rule:evenodd;}</style></defs><g id="Telegram"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="Telegram-2" data-name="Telegram" class="cls-1" d="M603.31,105.65q46.89-20.43,62.53-26.94c29.78-12.38,36-14.53,40-14.61A7.09,7.09,0,0,1,710,65.35a4.49,4.49,0,0,1,1.53,2.9,19.25,19.25,0,0,1,.18,4.23c-1.61,17-8.6,58.09-12.15,77.08-1.5,8-4.46,10.73-7.33,11-6.22.57-11-4.12-17-8.07-9.44-6.19-14.77-10-23.93-16.08-10.59-7-3.72-10.81,2.31-17.07,1.58-1.64,29-26.6,29.54-28.86a2.18,2.18,0,0,0-.5-1.9,2.49,2.49,0,0,0-2.22-.21q-1.41.31-45.22,29.89-6.42,4.41-11.63,4.3c-3.83-.09-11.19-2.17-16.67-4-6.71-2.18-12-3.33-11.58-7Q595.7,108.68,603.31,105.65Z" transform="translate(-554)"/></g></svg>
-                            </a>
+                <nav class="header__wrapper-menu--navbar">
+                    <ul class="header__list">
+                        <li class="header__item">
+                            <a href="index.html" class="header__link">Главная</a>
                         </li>
-                        <li class="footer__info-social--item">
-                            <a href="#" class="footer__info-social--link">
-                                <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="VK"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="VK-2" data-name="VK" class="cls-1" d="M111.44,147.14C69.76,147.14,46,118.56,45,71H65.87c.69,34.9,16.08,49.69,28.27,52.74V71h19.67v30.1c12-1.29,24.69-15,28.95-30.1h19.67c-3.28,18.59-17,32.31-26.75,37.95A60.16,60.16,0,0,1,167,147.14H145.36c-4.65-14.48-16.24-25.68-31.55-27.2v27.2Z"/></g></svg> 
-                            </a>
+                        <li class="header__item">
+                            <a href="#" class="header__link links">Услуги</a>
                         </li>
-                        <li class="footer__info-social--item">
-                            <a href="#" class="footer__info-social--link">
-                                <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Pinterest"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="Pinterest-2" data-name="Pinterest" class="cls-1" d="M109.16,612.63c-29.87,0-45.41,19.92-45.41,41.82,0,10.16,5.18,22.71,13.94,26.69,1.2.8,2,.4,2-.8l2-7.56c.2-1,.2-1.6-.4-2a26.31,26.31,0,0,1-5.18-15.94c0-15.33,11.55-29.87,31.07-29.87,17.13,0,29.08,11.35,29.08,27.88,0,18.72-9.56,31.87-21.91,31.87A10.6,10.6,0,0,1,103.78,672c2-8.17,6-16.73,6-22.7,0-5.58-2.79-10-8.77-10-6.77,0-12.74,7.17-12.74,16.73a25,25,0,0,0,2,10.35l-8,34.26c-1.19,6.17-.59,15.14,0,20.51.09.94.56,2.58,1.76,2.81a2.66,2.66,0,0,0,2.53-1.39c3-4.79,7.28-12.64,8.86-18.55l4.78-16.53c2.19,4.39,8.76,8,15.53,8,21.11,0,35.85-19.12,35.85-43C151.58,629.76,133.06,612.63,109.16,612.63Z" transform="translate(0 -554)"/></g></svg>
-                            </a>
-                        </li class="footer__info-social--item">
-                        <li>
-                            <a href="#" class="footer__info-social--link">
-                                <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---watsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{fill-rule:evenodd;}</style></defs><g id="WhatsApp"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><g id="WhatsApp-2" data-name="WhatsApp"><path id="WhatsApp-3" data-name="WhatsApp" class="cls-1" d="M885.91,161l7.55-27.56a53.18,53.18,0,1,1,46.09,26.64h0a53.18,53.18,0,0,1-25.41-6.48Zm29.5-17,1.62,1a44.21,44.21,0,0,0,22.5,6.17h0a44.22,44.22,0,1,0-37.45-20.72l1,1.67-4.47,16.31Z" transform="translate(-831)"/><path id="WhatsApp-4" data-name="WhatsApp" class="cls-2" d="M966.34,119.54c-.33-.56-1.22-.89-2.55-1.55s-7.86-3.88-9.08-4.33-2.1-.66-3,.67-3.43,4.32-4.2,5.21-1.56,1-2.88.33A36.31,36.31,0,0,1,934,113.28a40,40,0,0,1-7.39-9.21c-.78-1.33-.09-2,.58-2.71s1.33-1.56,2-2.33a8.84,8.84,0,0,0,1.33-2.22,2.47,2.47,0,0,0-.11-2.33c-.33-.66-3-7.2-4.1-9.86s-2.17-2.24-3-2.29-1.66,0-2.54,0A4.89,4.89,0,0,0,917.17,84,14.91,14.91,0,0,0,912.52,95c0,6.54,4.76,12.86,5.43,13.75s9.37,14.31,22.7,20.06a75.55,75.55,0,0,0,7.58,2.8,18.27,18.27,0,0,0,8.37.53c2.55-.38,7.86-3.22,9-6.32S966.67,120.09,966.34,119.54Z" transform="translate(-831)"/></g></g></svg>
-                            </a>
+                        <li class="header__item">
+                            <a href="types-of-animals.html" class="header__link">Виды животных</a>
                         </li>
-                        <li class="footer__info-social--item">
-                            <a href="#" class="footer__info-social--link">
-                                <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---tiktok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="TikTok"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="TikTok-2" data-name="TikTok" class="cls-1" d="M419.1,353.05a27.23,27.23,0,0,1-12-17.87h0a26.36,26.36,0,0,1-.41-4.94H387.06v78.57A16.49,16.49,0,0,1,370.6,424.7a17,17,0,0,1-7.68-1.82,16.5,16.5,0,0,1,7.6-31.09,16.79,16.79,0,0,1,4.87.76V372.46a34,34,0,0,0-4.83-.41,36.07,36.07,0,0,0-34.48,25.24c-4.59,14.57.05,30.52,12.13,39.69.6.5,1.07.79,1.63,1.18a35.71,35.71,0,0,0,20.72,6.12,36.15,36.15,0,0,0,36.15-36.07V368.26A46.68,46.68,0,0,0,434,377V357.54A27,27,0,0,1,419.1,353.05Z" transform="translate(-277 -277)"/></g></svg>
-                            </a>    
+                        <li class="header__item">
+                            <a href="#" class="header__link links">Контакты</a>
+                        </li>
+                        <li class="header__item">
+                            <a href="#" class="header__link links">О нас</a>
                         </li>
                     </ul>
-                </div>
-                <div class="footer__info-faq">
-                    <h3 class="footer__info-social--title">FAQ</h3>
-                    <p class="footer__info-social--text">Муниципальное автономное учреждение города Москва "Московский зоопарк" 2008 - 2021 © Все права защищены. <br>Любое копирование и использование материалов сайта без разрешения владельца запрещено и преследуется по законодательству РФ</p>
+                </nav>
+                <nav class="header-buttons">
+                    <button class="header__button header__button-enter">Войти</button>
+                    <button class="header__button header__button-registration">Регистрация</button>
+                </nav>    
+            </div>
+        </header>
+        <main class="main">
+            <div class="container main__wrapper-slider">
+                <div class="main__slider">
+                    <ul class="main__slider-list">
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_Sg_OwwU2Z9o.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_eEMm5-KDHms.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_UgidX4V13Gc.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_GuoDDPeQtdM.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_XvaaB8jpSoQ.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_VnfxB43Zp5Q.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_0J70eDz8YpM.png" alt="#" class="main__slider-img">
+                        </li>
+                        <li class="main__slider-item">
+                            <img src="images/unsplash_zTGzwYKXC-A.png" alt="#" class="main__slider-img">
+                        </li>
+                    </ul>
+                    <a class="main__slider-arrowLeft" onclick="backSlide(-1)">&#10094;</a>
+                    <a class="main__slider-arrowRight" onclick="nextSlide(1)">&#10095;</a>
+                    <div class="main__slider-dots">
+                        <span class="main__slider-itemDots" onclick="currentSlide(1)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(2)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(3)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(4)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(5)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(6)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(7)"></span>
+                        <span class="main__slider-itemDots" onclick="currentSlide(8)"></span>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-<script src="js/slider.js" defer></script>
-<script src="js/scroll.js"></script>
+            <div id="about" class="container main__wrapper-about">
+                <h1 class="main__about-title">О нас</h1>
+                <div class="main__about-content">
+                    <div class="main__about-info">
+                        <h3 class="main__about-info--title">Московский Зоопарк</h3>
+                        <p class="main__about-info--text">Наш зоопарк признан лучшим в России, здесь вы можете увидеть самых редких животных которые занесены в красную книгу, посетить множество различных лекций, поучавствовать в конкурсах и викторинах.</p>
+                        <svg width="488" height="287" viewBox="0 0 488 287" fill="none" xmlns="http://www.w3.org/2000/svg" class="main__about-info--svg">
+                            <g clip-path="url(#clip0_213_1499)">
+                                <path d="M73.9706 176.543C67.7512 175.587 61.827 171.614 57.7633 165.684C53.0366 158.885 49.7066 145.078 56.0677 138.001C57.9594 135.896 60.4655 134.808 63.3454 134.844C70.5874 134.925 77.9242 142.116 81.6278 146.391C82.5956 147.529 83.6326 148.637 84.597 149.727C90.7199 156.467 97.615 164.088 91.6208 170.756C91.165 171.264 90.6601 171.774 90.0075 172.247C85.1287 175.975 79.5977 177.442 73.9706 176.543ZM132.682 120.45C130.992 120.98 129.515 121.96 128.284 123.329C122.768 129.465 123.432 142.165 124.649 146.425C127.333 156.011 130.723 167.944 144.299 167.108C149.349 166.8 153.695 164.637 157.205 160.733C158.71 159.059 160.045 157.063 161.159 154.788C163.723 149.675 162.511 145.507 160.682 139.203L160.358 138.116C158.907 132.989 155.9 129.437 151.201 125.075C147.113 121.283 141.967 117.48 132.682 120.45ZM113.051 146.663C113.396 146.33 113.692 146 114.081 145.615C122.08 136.715 116.956 123.931 108.792 115.81C103.99 111.052 96.7504 108.192 89.8899 108.351C85.1485 108.475 81.2044 110.036 78.7862 112.726C72.0172 120.257 79.4404 128.686 85.9814 136.14L87.7015 138.089C94.5149 145.909 99.8153 149.49 104.931 149.773C107.892 149.924 110.699 148.867 113.051 146.663ZM108.426 201.866C108.236 198.838 106.513 188.595 92.923 183.06C88.3116 181.19 74.1245 179.405 67.9731 186.249C67.4033 186.883 66.9096 187.581 66.543 188.303C61.9343 197.093 72.2118 209.965 76.2519 213.407C81.8886 218.21 88.401 219.818 94.5968 217.978C96.5028 217.408 101.345 215.673 104.857 211.765C107.453 208.873 108.658 205.471 108.426 201.866ZM160.575 171.663C153.138 172.674 141.884 174.23 133.109 173.067C132.164 172.933 131.164 172.707 130.09 172.46C126.008 171.49 119.824 170.031 115.724 174.592C115.519 174.82 115.34 175.071 115.092 175.347C112.783 178.529 113.342 182.234 114.126 187.335C115.004 193.008 116.226 200.766 114.653 212.765C112.959 225.564 117.605 232.608 130.751 237.137C138.777 239.905 146.002 238.047 151.678 231.734C154.848 228.207 156.961 224.007 158.458 220.94C159.039 219.778 159.751 218.374 159.907 218.149C160.65 217.523 163.308 216.117 165.674 214.869C171.151 211.964 178.006 208.361 181.424 204.558C186.872 198.498 186.993 188.885 184.251 182.613C182.193 177.949 178.779 170.159 166.699 170.922C165.327 171.011 163.208 171.309 160.575 171.663Z" fill="#A8D8C4"/>
+                            </g>
+                            <g clip-path="url(#clip1_213_1499)">
+                                <path d="M414.029 118.477C420.249 117.521 426.173 113.548 430.237 107.618C434.963 100.819 438.293 87.0119 431.932 79.935C430.041 77.8305 427.534 76.742 424.655 76.7779C417.413 76.859 410.076 84.0506 406.372 88.3257C405.404 89.4637 404.367 90.5712 403.403 91.6615C397.28 98.4009 390.385 106.022 396.379 112.691C396.835 113.198 397.34 113.708 397.993 114.182C402.871 117.91 408.402 119.376 414.029 118.477ZM355.318 62.384C357.008 62.9143 358.485 63.894 359.716 65.2632C365.232 71.3994 364.568 84.099 363.351 88.3596C360.667 97.9454 357.277 109.878 343.701 109.043C338.651 108.734 334.305 106.572 330.795 102.667C329.29 100.993 327.955 98.9973 326.841 96.7226C324.276 91.6089 325.489 87.4416 327.318 81.1372L327.642 80.0505C329.093 74.923 332.1 71.3715 336.799 67.0092C340.887 63.2176 346.033 59.4146 355.318 62.384ZM374.949 88.597C374.604 88.2643 374.308 87.9347 373.919 87.5491C365.92 78.6491 371.044 65.8649 379.208 57.7445C384.01 52.9861 391.25 50.1264 398.11 50.2853C402.851 50.4096 406.796 51.9698 409.214 54.6601C415.983 62.1909 408.56 70.6203 402.019 78.0741L400.298 80.0233C393.485 87.8436 388.185 91.4239 383.069 91.7078C380.108 91.8584 377.301 90.8017 374.949 88.597ZM379.574 143.801C379.764 140.773 381.487 130.529 395.077 124.994C399.688 123.125 413.875 121.339 420.027 128.183C420.597 128.817 421.09 129.516 421.457 130.238C426.066 139.027 415.788 151.899 411.748 155.341C406.111 160.144 399.599 161.753 393.403 159.912C391.497 159.342 386.655 157.607 383.143 153.7C380.547 150.807 379.342 147.406 379.574 143.801ZM327.425 113.597C334.862 114.609 346.116 116.164 354.891 115.001C355.836 114.868 356.836 114.642 357.91 114.394C361.992 113.424 368.176 111.965 372.276 116.527C372.481 116.755 372.66 117.005 372.908 117.282C375.217 120.464 374.658 124.168 373.874 129.27C372.996 134.943 371.774 142.7 373.347 154.699C375.041 167.498 370.395 174.542 357.249 179.071C349.223 181.84 341.998 179.982 336.322 173.668C333.152 170.141 331.039 165.941 329.542 162.874C328.961 161.713 328.249 160.308 328.093 160.083C327.35 159.458 324.692 158.051 322.326 156.803C316.849 153.898 309.994 150.295 306.576 146.492C301.128 140.432 301.007 130.819 303.749 124.547C305.807 119.883 309.221 112.093 321.301 112.856C322.672 112.946 324.792 113.244 327.425 113.597Z" fill="#A8D8C4"/>
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_213_1499">
+                                    <rect width="163.65" height="165.33" fill="white" transform="matrix(0.668495 -0.743717 0.761169 0.648554 0 179.775)"/>
+                                </clipPath>
+                                <clipPath id="clip1_213_1499">
+                                    <rect width="163.65" height="165.33" fill="white" transform="matrix(-0.668495 -0.743717 -0.761169 0.648554 488 121.709)"/>
+                                </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="main__about-img">
+                        <div class="main__about-img--block">
+                            <img src="images/unsplash_nOo6WHb0BUk.png" alt="#" class="main__about-img--item">
+                            <img src="images/unsplash_q7pOFt3J0ks.png" alt="#" class="main__about-img--item">
+                            <img src="images/unsplash_3SBfM2-ytb8.png" alt="#" class="main__about-img--item">
+                            <img src="images/unsplash_LKREcvZeoJQ.png" alt="#" class="main__about-img--item">
+                            <img src="images/unsplash_pr1M1Y7zdik.png" alt="#" class="main__about-img--item">
+                            <img src="images/unsplash_y421kXlUOQk.png" alt="#" class="main__about-img--item">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="services" class="container main__wrapper-services">
+                <h1 class="main__services-title">Услуги</h1>
+                <div class="main__services-cards">
+                    <div class="main__services-cards--left">
+                        <div class="main__services-card">
+                            <h3 class="main__services-card--title">Лекции</h3>
+                            <img src="images/image 46.png" alt="#" class="main__services-card--img">
+                            <p class="main__services-card--textInfo---info">На наших лекция вы сможете узнать большое количество информации о различных видах животных, как правильно кормить  домашних животных и ухаживать за ними.</p>
+                            <p class="main__services-card--textList">Список лекций:</p>
+                            <ul class="main__services-card--list">
+                                <li class="main__services-card--item">млекопитающие</li>
+                                <li class="main__services-card--item">птицы</li>
+                                <li class="main__services-card--item">рептилии</li>
+                                <li class="main__services-card--item">амфибии</li>
+                                <li class="main__services-card--item">рыбы</li>
+                                <li class="main__services-card--item">беспозвоночные</li>
+                            </ul>
+                            <p class="main__services-card--link">Если вы хотели бы узнать более подробнее о каждой лекции, нажмите <a href="lectures.html">подробнее...</a></p>
+                        </div>
+                        <div class="main__services-card">
+                            <h3 class="main__services-card--title">Экскурсии</h3>
+                            <img src="images/image 54.png" alt="#" class="main__services-card--img">
+                            <p class="main__services-card--textInfo---info">Доверьтесь нашим опытным экскурсоводам и вы откроете для себя совершенно новый, но такой же любимый Московский зоопарк. Вместе вы не просто совершите прогулку по зоопарку, но и узнаете много всего интересного о жизни и особенностях поведения наших питомцев, их повадках и характере, а  так же откроете для себя зоопарк с новой и удивительной стороны.</p>
+                            <p class="main__services-card--textInfo main__services-card--textInfo---infopad">Экскурсии проходят каждый день в 13:00 и 17:00  купить билет можно в кассе.</p>
+                        </div>
+                    </div>
+                    <div class="main__services-cards--right">
+                        <div class="main__services-card">
+                            <h3 class="main__services-card--title">Фотоссесия</h3>
+                            <div class="main__services-card--img_list">
+                                <div class="main__services-card--img_item">
+                                    <img src="images/image 47.png" alt="#" class="main__services-card--photo">
+                                    <img src="images/image 48.png" alt="#" class="main__services-card--photo">
+                                </div>
+                                <div class="main__services-card--img_item">
+                                    <img src="images/image 49.png" alt="#" class="main__services-card--photo">
+                                    <img src="images/image 50.png" alt="#" class="main__services-card--photo">
+                                </div>
+                            </div>
+                            <p class="main__services-card--textInfo">В зоопарке работают проффесиональные фотографы, к которым вы всегда можете подойти и попросить вас сфотографировать. </p>
+                            <p class="main__services-card--textList">Отдел фотографов находится в главном здании на первом этаже, стоимость одной фотографии 30р.</p>
+                        </div>
+                        <div class="main__services-card--bgc">
+                            <h3 class="main__services-card--title">Выставки</h3>
+                            <div class="main__services-card--imgs">
+                                <img src="images/image 52.png" alt="#" class="main__services-card--imgs---img">
+                                <img src="images/image 53.png" alt="#" class="main__services-card--imgs---img">
+                                <img src="images/image 51.png" alt="#" class="main__services-card--imgs---img">
+                            </div>
+                            <p class="main__services-card--textInfo">Так же раз в месяц у нас проходит конкурс выставки кошек, вы можете прийти со своим питомцем и поучаствовать. Победителю достанутся очень ценные призы, все участники получат подарки от зоопарка.</p>
+                            <p class="main__services-card--textInfo">Выставки проходят каждое 15 число месяца 14:00 в главном здании на первом этаже  </p>
+                        </div>
+                        <div class="main__services-card">
+                            <h3 class="main__services-card--title">Свадьбы</h3>
+                            <img src="images/image 55.png" alt="#" class="main__services-card--img">      
+                            <p class="main__services-card--textInfo">По вопросу заказа свадебного мероприятия вы можете обращаться к менеджеру по организации экскурсий:<br> 
+                                <a href="#">+7 (485)-674-32-21</a> или отправить заявку по e-mail: <a href="#">moskovskiyzoo@yandex.ru</a> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__services-card--full">
+                    <h3 class="main__services-card--title">Квесты</h3>
+                    <img src="images/image 57.png" alt="#" class="main__services-card--img">      
+                    <div class="main__services-card--full---allinfo">
+                        <span>
+                            <h5 class="main__services-card--full---title">«Пиратский квест»</h5>
+                            <p class="main__services-card--full---text">Возраст:  6+</p>
+                            <p class="main__services-card--full---text">Группа:  до 25 человек </p>
+                            <p class="main__services-card--full---text">Продолжительность:  1.5 часа</p>
+                            <p class="main__services-card--full---title">Стоимость участия в квесте:  300 рублей с человека</p>
+                        </span>
+                        <span>
+                            <p class="main__services-card--full---text">Наших юных следопытов ждут увлекательные приключения в поисках «Острова сокровищ». Прежде, чем они отправятся в путь по удивительным экспозициям зоопарка, им предстоит пройти посвящение в пираты.</p>
+                            <p class="main__services-card--full---text">Искателям приключений придется проявить смекалку, находчивость и сообразительность. А добрые обитатели зоопарка будут помогать нашим путешественникам, чтобы найти необходимые подсказки, ведущие к волшебному пиратскому сундуку. Внимание и наблюдательность, которой всегда славились удачливые следопыты, помогут ребятам не только достичь цели, но и узнать много интересных фактов из жизни животных!</p>
+                            <p class="main__services-card--full---text">По вопросу квеста  вы можете обращаться к менеджеру по организации экскурсий: <a href="#">+7 (485)-674-32-21</a> или отправить заявку по e-mail: <a href="#">moskovskiyzoo@yandex.ru</a></p>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="contact" class="container main__wrapper-contact">
+                <div class="main__wrapper-contact--info"> 
+                    <h1 class="main__contact-title">Контакты</h1>
+                    <div class="main__contact-cards">
+                        <div class="main__contact-card">
+                            <div class="main__contact-card--infoUp">
+                                <h3 class="main__contact-card--title">Администрация (Приёмная директора)</h3>
+                                <p class="main__contact-card--text">Секретарь директора: <a href="#">+7 (485)-650-31-25</a>, 71-00-50 (факс) Электронная почта: <a href="#">mz@moscowzoo.ru</a></p>
+                            </div>
+                            <div class="main__contact-card--infoDown">
+                                <h3 class="main__contact-card--title">Отдел кадров</h3>
+                                <p class="main__contact-card--text"><a href="#">+7 (485)-650-55-24</a> / Электронная почта: <a href="#">mz@moscowzoo.ru</a> Приезжайте к нам:150007, Москва, ул. Шевелюха 137</p>
+                            </div>
+                        </div>
+                        <div class="main__contact-card">
+                            <div class="main__contact-card--infoUp">
+                                <h3 class="main__contact-card--title">Отдел маркетинга и продаж</h3>
+                                <p class="main__contact-card--text main__contact-card--text---down"><a href="#">+7 (485)-650-66-56</a> (Заказ экскурсий, квеста и свадеб в зоопарке)
+                                    <a href="#">+7 (485)-650-34-11</a> (Партнерские программы и опека животных)
+                                    <a href="#">+7 (485)-650-45-19</a> (Лекции)</p>
+                            </div>
+                            <div class="main__contact-card--infoDown">
+                                <p class="main__contact-card--text">Заказ экскурсий, квеста и свадеб и предложения по рекламе: <a href="#">moskovskiyzoo@yandex.ru</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container footer__wrapper">
+                <div class="footer__menu">
+                    <a href="index.html" class="footer__menu-logo--link header__logo-link"><img src="./images/logo.png" alt="#" class="header__logo"></a>
+                    <ul class="footer__menu-list">
+                        <li class="footer__menu-item">
+                            <a href="index.html" class="footer__menu-link header__link">Главная</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link header__link">Услуги</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="types-of-animals.html" class="footer__menu-link header__link">Виды животных</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="lectures.html" class="footer__menu-link header__link">Лекции</a>
+                        </li>
+                        <li class="footer__menu-item">
+                            <a href="#" class="footer__menu-link header__link">О нас</a>
+                        </li>
+                    </ul>    
+                </div>
+                <div class="footer__info">
+                    <div class="footer__info-social">
+                        <h3 class="footer__info-social--title">Наши соцсети</h3>
+                        <ul class="footer__info-social--list">
+                            <li class="footer__info-social--item">
+                                <a href="#" class="footer__info-social--link">
+                                    <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---telegram" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;fill-rule:evenodd;}</style></defs><g id="Telegram"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="Telegram-2" data-name="Telegram" class="cls-1" d="M603.31,105.65q46.89-20.43,62.53-26.94c29.78-12.38,36-14.53,40-14.61A7.09,7.09,0,0,1,710,65.35a4.49,4.49,0,0,1,1.53,2.9,19.25,19.25,0,0,1,.18,4.23c-1.61,17-8.6,58.09-12.15,77.08-1.5,8-4.46,10.73-7.33,11-6.22.57-11-4.12-17-8.07-9.44-6.19-14.77-10-23.93-16.08-10.59-7-3.72-10.81,2.31-17.07,1.58-1.64,29-26.6,29.54-28.86a2.18,2.18,0,0,0-.5-1.9,2.49,2.49,0,0,0-2.22-.21q-1.41.31-45.22,29.89-6.42,4.41-11.63,4.3c-3.83-.09-11.19-2.17-16.67-4-6.71-2.18-12-3.33-11.58-7Q595.7,108.68,603.31,105.65Z" transform="translate(-554)"/></g></svg>
+                                </a>
+                            </li>
+                            <li class="footer__info-social--item">
+                                <a href="#" class="footer__info-social--link">
+                                    <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---vk" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="VK"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="VK-2" data-name="VK" class="cls-1" d="M111.44,147.14C69.76,147.14,46,118.56,45,71H65.87c.69,34.9,16.08,49.69,28.27,52.74V71h19.67v30.1c12-1.29,24.69-15,28.95-30.1h19.67c-3.28,18.59-17,32.31-26.75,37.95A60.16,60.16,0,0,1,167,147.14H145.36c-4.65-14.48-16.24-25.68-31.55-27.2v27.2Z"/></g></svg> 
+                                </a>
+                            </li>
+                            <li class="footer__info-social--item">
+                                <a href="#" class="footer__info-social--link">
+                                    <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---pinterest" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="Pinterest"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="Pinterest-2" data-name="Pinterest" class="cls-1" d="M109.16,612.63c-29.87,0-45.41,19.92-45.41,41.82,0,10.16,5.18,22.71,13.94,26.69,1.2.8,2,.4,2-.8l2-7.56c.2-1,.2-1.6-.4-2a26.31,26.31,0,0,1-5.18-15.94c0-15.33,11.55-29.87,31.07-29.87,17.13,0,29.08,11.35,29.08,27.88,0,18.72-9.56,31.87-21.91,31.87A10.6,10.6,0,0,1,103.78,672c2-8.17,6-16.73,6-22.7,0-5.58-2.79-10-8.77-10-6.77,0-12.74,7.17-12.74,16.73a25,25,0,0,0,2,10.35l-8,34.26c-1.19,6.17-.59,15.14,0,20.51.09.94.56,2.58,1.76,2.81a2.66,2.66,0,0,0,2.53-1.39c3-4.79,7.28-12.64,8.86-18.55l4.78-16.53c2.19,4.39,8.76,8,15.53,8,21.11,0,35.85-19.12,35.85-43C151.58,629.76,133.06,612.63,109.16,612.63Z" transform="translate(0 -554)"/></g></svg>
+                                </a>
+                            </li class="footer__info-social--item">
+                            <li>
+                                <a href="#" class="footer__info-social--link">
+                                    <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---watsapp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1,.cls-2{fill:#fff;}.cls-2{fill-rule:evenodd;}</style></defs><g id="WhatsApp"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><g id="WhatsApp-2" data-name="WhatsApp"><path id="WhatsApp-3" data-name="WhatsApp" class="cls-1" d="M885.91,161l7.55-27.56a53.18,53.18,0,1,1,46.09,26.64h0a53.18,53.18,0,0,1-25.41-6.48Zm29.5-17,1.62,1a44.21,44.21,0,0,0,22.5,6.17h0a44.22,44.22,0,1,0-37.45-20.72l1,1.67-4.47,16.31Z" transform="translate(-831)"/><path id="WhatsApp-4" data-name="WhatsApp" class="cls-2" d="M966.34,119.54c-.33-.56-1.22-.89-2.55-1.55s-7.86-3.88-9.08-4.33-2.1-.66-3,.67-3.43,4.32-4.2,5.21-1.56,1-2.88.33A36.31,36.31,0,0,1,934,113.28a40,40,0,0,1-7.39-9.21c-.78-1.33-.09-2,.58-2.71s1.33-1.56,2-2.33a8.84,8.84,0,0,0,1.33-2.22,2.47,2.47,0,0,0-.11-2.33c-.33-.66-3-7.2-4.1-9.86s-2.17-2.24-3-2.29-1.66,0-2.54,0A4.89,4.89,0,0,0,917.17,84,14.91,14.91,0,0,0,912.52,95c0,6.54,4.76,12.86,5.43,13.75s9.37,14.31,22.7,20.06a75.55,75.55,0,0,0,7.58,2.8,18.27,18.27,0,0,0,8.37.53c2.55-.38,7.86-3.22,9-6.32S966.67,120.09,966.34,119.54Z" transform="translate(-831)"/></g></g></svg>
+                                </a>
+                            </li>
+                            <li class="footer__info-social--item">
+                                <a href="#" class="footer__info-social--link">
+                                    <svg id="Icons" class="footer__info-social--svg footer__info-social--svg---tiktok" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 215 215"><defs><style>.cls-1{fill:#fff;}</style></defs><g id="TikTok"><circle id="Background" cx="107.5" cy="107.5" r="107.5"/><path id="TikTok-2" data-name="TikTok" class="cls-1" d="M419.1,353.05a27.23,27.23,0,0,1-12-17.87h0a26.36,26.36,0,0,1-.41-4.94H387.06v78.57A16.49,16.49,0,0,1,370.6,424.7a17,17,0,0,1-7.68-1.82,16.5,16.5,0,0,1,7.6-31.09,16.79,16.79,0,0,1,4.87.76V372.46a34,34,0,0,0-4.83-.41,36.07,36.07,0,0,0-34.48,25.24c-4.59,14.57.05,30.52,12.13,39.69.6.5,1.07.79,1.63,1.18a35.71,35.71,0,0,0,20.72,6.12,36.15,36.15,0,0,0,36.15-36.07V368.26A46.68,46.68,0,0,0,434,377V357.54A27,27,0,0,1,419.1,353.05Z" transform="translate(-277 -277)"/></g></svg>
+                                </a>    
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__info-faq">
+                        <h3 class="footer__info-social--title">FAQ</h3>
+                        <p class="footer__info-social--text">Муниципальное автономное учреждение города Москва "Московский зоопарк" 2008 - 2021 © Все права защищены. <br>Любое копирование и использование материалов сайта без разрешения владельца запрещено и преследуется по законодательству РФ</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/slider.js" defer></script>
+    <script src="js/scroll.js"></script>
+    <script src="js/regauth.js"></script>
 </body>
 </html>
