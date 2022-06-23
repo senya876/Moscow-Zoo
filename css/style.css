@@ -72,6 +72,11 @@
   transition: 0.25s ease;
 }
 
+.header__button a {
+  text-decoration: none;
+  color: white;
+}
+
 .header__button-enter {
   background-color: #82A1CF;
   margin-right: 20px;
@@ -97,6 +102,242 @@
 .header__button-registration:active {
   -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2) inset;
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2) inset;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  -webkit-transition: opacity 200ms ease-in;
+  transition: opacity 200ms ease-in;
+  pointer-events: none;
+  margin: 0;
+  padding: 0;
+  z-index: 5;
+}
+
+.modal:target {
+  opacity: 1;
+  pointer-events: auto;
+  overflow-y: auto;
+}
+
+.modal-dialog {
+  position: relative;
+  padding-top: 261px;
+  width: auto;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 500px;
+    margin: 30px auto;
+  }
+}
+
+.modal-content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #76C1A2;
+  background-clip: padding-box;
+  border-radius: 30px;
+  padding: 40px 56px;
+  outline: 0;
+}
+
+.modal-content--reg {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #76C1A2;
+  background-clip: padding-box;
+  border-radius: 30px;
+  padding: 40px 32px;
+  outline: 0;
+}
+
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+
+.modal-title {
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+
+#close {
+  float: right;
+  width: 18px;
+  height: 18px;
+  fill: #466188;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#close:focus, #close:hover {
+  fill: #43436b;
+  cursor: pointer;
+}
+
+.modal-body {
+  position: relative;
+  overflow: auto;
+  overflow: visible;
+}
+
+.header-link {
+  text-decoration: none;
+  background-color: #273a5ce7;
+  border-radius: 5px;
+  padding: 15px;
+  color: white;
+  -webkit-transition: 2s ease;
+  transition: 2s ease;
+}
+
+.header-link:hover {
+  background-color: white;
+  color: #292b2c;
+}
+
+.modalinputs {
+  margin-bottom: 30px;
+}
+
+.modalinp {
+  width: 100%;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  padding-left: 25px;
+  background-color: #466188;
+  border-radius: 10px;
+  border: none;
+  -webkit-box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 4px 10px rgba(0, 0, 0, 0.25);
+  color: white;
+  outline: none;
+  margin-bottom: 35px;
+}
+
+.modalinp::-webkit-input-placeholder {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modalinp:-ms-input-placeholder {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modalinp::-ms-input-placeholder {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modalinp::placeholder {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.modalinp:focus {
+  color: white;
+}
+
+.modalinplast {
+  margin-bottom: 0px;
+}
+
+.input-email {
+  margin-bottom: 35px;
+}
+
+.checklabel {
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-left: 10px;
+}
+
+.modal-inp {
+  margin-bottom: 35px;
+}
+
+.modal-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #FFFFFF;
+  margin-bottom: 15px;
+}
+
+.modal-text a {
+  margin: 0;
+  padding: 0;
+  color: #466188;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.modal-text a:hover {
+  color: #273a5ce7;
+}
+
+.modal-btn {
+  width: 100%;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #466188;
+  font-family: 'Montserrat';
+  font-size: 20px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.modal-btn:hover {
+  background-color: #273a5ce7;
+}
+
+.modal-title--reg {
+  margin: 0px;
+  margin-left: 15px;
 }
 
 .hamburger-menu {
