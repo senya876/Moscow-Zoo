@@ -65,6 +65,47 @@
                 <button class="header__button header__button-registration">Регистрация</button>
             </nav>    
         </div>
+        <div id="openModalIn" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title">Личный кабинет / вход</h3>
+                        <a href="#close" title="Close"><svg id="close" xmlns="http://www.w3.org/2000/svg"><rect y="15.5563" width="22" height="3" rx="1.5" transform="rotate(-45 0 15.5563)" /><rect x="2.12109" y="1.33514e-05" width="22" height="3" rx="1.5" transform="rotate(45 2.12109 1.33514e-05)"/></svg>
+                        </a>
+                    </div>
+                    <div class="modal-body">    
+                        <form class="modalinputs">
+                            <input type="text" name="email" value="" placeholder="Введите почту..." class="input-email modalinp" id="nameCheck">
+                            <input type="text" name="password" value="" placeholder="Введите пароль..." class="input-password modalinp" id="surnameCheck">
+                        </form>
+                        <input type="checkbox" class="modal-inp"><label class="checklabel">Запомнить меня</label>
+                        <p class="modal-text">Если вы ещё не зарегистрированны, то <a href="#openModalReg">регистрация</a></p>
+                        <button class="modal-btn">Войти</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="openModalReg" class="modal">
+            <div class="modal-dialog">
+                <div class="modal-content--reg">
+                    <div class="modal-header">
+                        <h3 class="modal-title modal-title--reg">Личный кабинет / регистрация</h3>
+                        <a href="#close" title="Close"><svg id="close" xmlns="http://www.w3.org/2000/svg"><rect y="15.5563" width="22" height="3" rx="1.5" transform="rotate(-45 0 15.5563)" /><rect x="2.12109" y="1.33514e-05" width="22" height="3" rx="1.5" transform="rotate(45 2.12109 1.33514e-05)"/></svg>
+                        </a>
+                    </div>
+                    <div class="modal-body">    
+                        <form class="modalinputs">
+                            <input type="text" name="name" value="" placeholder="Введите имя..." class="input-name modalinp" id="nameCheck">
+                            <input type="text" name="surname" value="" placeholder="Введите фамилию..." class="input-surname modalinp" id="surnameCheck">
+                            <input type="text" name="email" value="" placeholder="Введите почту..." class="input-email modalinp" id="emailCheck">
+                            <input type="text" name="password" value="" placeholder="Введите пароль..." class="input-password modalinp modalinplast" id="passwordCheck">
+                        </form>
+                        <p class="modal-text">Если вы уже зарегистрированы, то <a href="#openModalIn">войти</a></p>
+                        <button class="modal-btn">Зарегистрироваться</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </header>
 
     <main class="main ">
