@@ -963,9 +963,10 @@
 }
 
 .main_lectures-card {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.6fr 1fr;
+      grid-template-columns: 0.6fr 1fr;
   border-radius: 10px;
   padding: 35px 25px;
   margin-bottom: 80px;
@@ -976,6 +977,7 @@
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 10px;
 }
 
 .main_lectures-card--info {
