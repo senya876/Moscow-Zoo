@@ -104,6 +104,26 @@
           box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.2) inset;
 }
 
+.header__button-exit {
+  background-color: #DE6077;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.header__button-exit:hover {
+  background-color: #D44660;
+}
+
+.header__button-persacc {
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  margin-right: 20px;
+}
+
+.header__button-persacc:hover {
+  background-color: #3FCC91;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1097,6 +1117,144 @@
 .main-account--wrapper {
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.main-account {
+  background-color: #466188;
+  border-radius: 5px;
+  padding: 30px 70px;
+}
+
+.main-account--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  color: #FFFFFF;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.main-account--content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.main .account-infouser--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.main .account-infouser--info---title {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  color: #FFFFFF;
+}
+
+.main .account-infouser--info---block {
+  padding: 15px 15px;
+  margin-bottom: 15px;
+  background-color: #82A1CF;
+  border-radius: 5px;
+  max-width: 500px;
+}
+
+.main .account-lecturesuser--block {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 0.9fr 1fr;
+      grid-template-columns: 0.9fr 1fr;
+  gap: 8px;
+}
+
+.main .account-lecturesuser--info {
+  padding: 20px 25px;
+  background-color: #82A1CF;
+  border-radius: 5px;
+}
+
+.main .account-lecturesuser--manager {
+  padding: 13px 20px;
+  background-color: #82A1CF;
+  border-radius: 5px;
+}
+
+.main .account-lecturesuser--manager---text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 200%;
+  color: #FFFFFF;
+}
+
+.main .account-lecturesuser--manager---text a {
+  text-decoration: none;
+  color: #466188;
+  margin-left: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+}
+
+.main .account-lecturesuser--manager---text a:hover {
+  color: #1f1f41;
+}
+
+.main .account-lecturesuser--title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.main .account-lecturesuser--info---squares {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 18px;
+}
+
+.main .account-lecturesuser--info---squares p {
+  margin-left: 10px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #FFFFFF;
+}
+
+.main .account-lecturesuser--info---squares:last-child {
+  margin-bottom: 0px;
+}
+
+.main .account-lecturesuser--info---squaregreen, .main .account-lecturesuser--info---squarered, .main .account-lecturesuser--info---squareblue {
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.main .account-lecturesuser--info---squaregreen {
+  background: #5CC83C;
+}
+
+.main .account-lecturesuser--info---squarered {
+  background: #FF0000;
+}
+
+.main .account-lecturesuser--info---squareblue {
+  background: #466188;
 }
 
 #modal-container {

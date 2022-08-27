@@ -3,5 +3,117 @@
         padding-top: 60px;
         padding-bottom: 60px;
     }
-    
+    &-account{
+        background-color: $colorBlue;
+        border-radius: 5px;
+        padding: 30px 70px;
+        &--title{
+            font-family: $fontFamRoboto;
+            font-weight: 400;
+            font-size: 24px;
+            color: #FFFFFF;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        &--content{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+    }
+    .account{
+        &-infouser--title{
+            font-family: $fontFamRoboto;
+            font-weight: 400;
+            font-size: 20px;
+            color: #FFFFFF;
+            margin-bottom: 25px;
+            text-align: center;
+        }
+        &-infouser--info---title{
+            font-family: $fontFamMontserrat;
+            font-style: normal;
+            font-weight: 700;
+            font-size: 14px;
+            color: #FFFFFF;
+        }
+        &-infouser--info---block{
+            padding: 15px 15px;
+            margin-bottom: 15px;
+            background-color: $colorLightBlue;
+            border-radius: 5px;
+            max-width: 500px;
+        }
+        &-lecturesuser{
+            &--block{
+                display: grid;
+                grid-template-columns: 0.9fr 1fr;
+                gap: 8px;
+            }
+            &--info{
+                padding: 20px 25px;
+                background-color: $colorLightBlue;
+                border-radius: 5px;
+            }
+            &--manager{
+                padding: 13px 20px;
+                background-color: $colorLightBlue;
+                border-radius: 5px;
+                &---text{
+                    font-family: $fontFamRoboto;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 200%;
+                    color: #FFFFFF;
+                    & a{
+                        text-decoration: none;
+                        color: $colorBlue;
+                        margin-left: 5px;
+                        transition: 0.5s ease;
+                        &:hover{
+                            color: rgb(31, 31, 65);
+                        }
+                    }
+                }
+            }
+            &--title{
+                font-family: $fontFamRoboto;
+                font-weight: 400;
+                font-size: 20px;
+                color: #FFFFFF;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+            &--info---squares{
+                display: flex;
+                align-items: center;
+                margin-bottom: 18px;
+                & p{
+                    margin-left: 10px;
+                    font-family: $fontFamRoboto;
+                    font-weight: 400;
+                    font-size: 12px;
+                    line-height: 14px;
+                    color: #FFFFFF;
+                }
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+            &--info---squaregreen, &--info---squarered, &--info---squareblue{
+                width: 15px;
+                height: 15px;
+                border-radius: 5px;
+            }
+            &--info---squaregreen{
+                background: #5CC83C;
+            }
+            &--info---squarered{
+                background: #FF0000;
+            }
+            &--info---squareblue{
+                background: $colorBlue;
+            }
+        }
+    }
 }

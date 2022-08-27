@@ -62,8 +62,8 @@
                 </ul>
             </nav>
             <nav class="header-buttons">
-                <button class="header__button header__button-enter">Войти</button>
-                <button class="header__button header__button-registration">Регистрация</button>
+                <button class="header__button header__button-registration header__button-persacc">Личный кабинет</button>
+                <button class="header__button header__button-registration header__button-exit">Выход</button>
             </nav>    
         </div>
     </header>
@@ -73,13 +73,43 @@
                 <h1 class="main-account--title">Личный кабинет</h1>
                 <div class="main-account--content">
                     <div class="account-infouser">
-                        <h3>Данные пользователя</h3>
-                        <div>
-                            
+                        <h3 class="account-infouser--title">Данные пользователя</h3>
+                        <div class="account-infouser--info">
+                            <div class="account-infouser--info---block">
+                                <h3 class="account-infouser--info---title">Имя:</h3>
+                            </div>
+                            <div class="account-infouser--info---block">
+                                <h3 class="account-infouser--info---title">Фамилия:</h3>
+                            </div>
+                            <div class="account-infouser--info---block">
+                                <h3 class="account-infouser--info---title">Почта:</h3>
+                            </div>
+                            <div class="account-infouser--info---block">
+                                <h3 class="account-infouser--info---title">Пароль:</h3>
+                            </div>
                         </div>
                     </div>
                     <div class="account-lecturesuser">
-
+                        <h3 class="account-lecturesuser--title">Лекции на которые вы записаны</h3>
+                        <div class="account-lecturesuser--block">
+                            <div class="account-lecturesuser--info">
+                                <div class="account-lecturesuser--info---squares">
+                                    <div class="account-lecturesuser--info---squaregreen"></div>
+                                    <p>- уроки которые вы посетили</p>
+                                </div>
+                                <div class="account-lecturesuser--info---squares">
+                                    <div class="account-lecturesuser--info---squarered"></div>
+                                    <p>- уроки которые вы не посетили</p>
+                                </div>
+                                <div class="account-lecturesuser--info---squares">
+                                    <div class="account-lecturesuser--info---squareblue"></div>
+                                    <p>- уроки которых ещё не было</p>
+                                </div>
+                            </div>
+                            <div class="account-lecturesuser--manager">
+                                <p class="account-lecturesuser--manager---text">Если вас не было на лекции, то мы вам предоставим ссылку на видео. Если что, вы всегда можете обратить к нашему менеджеру:<a href="#">+7 (485)-650-45-19 </a></p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
