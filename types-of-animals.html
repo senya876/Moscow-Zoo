@@ -75,12 +75,12 @@
                     </div>
                     <div class="modal-body">    
                         <form class="modalinputs">
-                            <input type="text" name="email" value="" placeholder="Введите почту..." class="input-email modalinp" id="nameCheck">
-                            <input type="text" name="password" value="" placeholder="Введите пароль..." class="input-password modalinp" id="surnameCheck">
+                            <input type="text" name="email" value="" placeholder="Введите почту..." class="input-email modalinp" id="nameCheck1">
+                            <input type="text" name="password" value="" placeholder="Введите пароль..." class="input-password modalinp" id="surnameCheck1">
                         </form>
                         <input type="checkbox" class="modal-inp"><label class="checklabel">Запомнить меня</label>
                         <p class="modal-text">Если вы ещё не зарегистрированны, то <a href="#openModalReg">регистрация</a></p>
-                        <button class="modal-btn">Войти</button>
+                        <input type="submit" class="modal-btn" value="Войти" onclick="check()">
                     </div>
                 </div>
             </div>
@@ -95,13 +95,13 @@
                     </div>
                     <div class="modal-body">    
                         <form class="modalinputs">
-                            <input type="text" name="name" value="" placeholder="Введите имя..." class="input-name modalinp" id="nameCheck">
-                            <input type="text" name="surname" value="" placeholder="Введите фамилию..." class="input-surname modalinp" id="surnameCheck">
-                            <input type="text" name="email" value="" placeholder="Введите почту..." class="input-email modalinp" id="emailCheck">
-                            <input type="text" name="password" value="" placeholder="Введите пароль..." class="input-password modalinp modalinplast" id="passwordCheck">
+                            <input type="text"  value="" placeholder="Введите имя..." class="input-name modalinp" id="nameCheck">
+                            <input type="text"  value="" placeholder="Введите фамилию..." class="input-surname modalinp" id="surnameCheck">
+                            <input type="email"  value="" placeholder="Введите почту..." class="input-email modalinp" id="emailCheck">
+                            <input type="password"  value="" placeholder="Введите пароль..." class="input-password modalinp modalinplast" id="passwordCheck">
                         </form>
                         <p class="modal-text">Если вы уже зарегистрированы, то <a href="#openModalIn">войти</a></p>
-                        <button class="modal-btn">Зарегистрироваться</button>
+                        <input type="submit" class="modal-btn" value="Зарегистрироваться" onclick="store()">
                     </div>
                 </div>
             </div>

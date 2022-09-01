@@ -23,11 +23,12 @@ function check() {
     // entered data from the login-form
     var userName = document.getElementById('nameCheck1');
     var userPw = document.getElementById('surnameCheck1');
-
+    
     // check if stored data from register-form is equal to data from login form
     if(userName.value !== storedEmail || userPw.value !== storedPassword) {
         alert('ERROR');
     }else {
+        window.location.href = '../personal-account.html';
         alert('You are loged in.');
     }
 }

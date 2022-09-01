@@ -17,7 +17,7 @@
         }
         &--content{
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 0.9fr 1fr;
             gap: 15px;
         }
     }
@@ -47,7 +47,7 @@
         &-lecturesuser{
             &--block{
                 display: grid;
-                grid-template-columns: 0.9fr 1fr;
+                grid-template-columns: 1fr 1fr;
                 gap: 8px;
             }
             &--info{
