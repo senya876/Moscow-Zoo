@@ -599,6 +599,7 @@
 .main__services-card--img {
   margin-bottom: 15px;
   width: 100%;
+  border-radius: 10px;
 }
 
 .main__services-card--textInfo---info {
@@ -657,6 +658,7 @@
 
 .main__services-card--photo {
   width: 100%;
+  border-radius: 10px;
 }
 
 .main__services-card--photo:nth-child(2) {
@@ -683,6 +685,7 @@
 
 .main__services-card--imgs---img {
   width: 100%;
+  border-radius: 10px;
 }
 
 .main__services-card--textInfo a {
@@ -1096,6 +1099,7 @@
 .main-animals--card---img {
   width: 100%;
   display: block;
+  border-radius: 10px 10px 0px 0px;
 }
 
 .main-animals--card---title {
