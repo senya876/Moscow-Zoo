@@ -26,13 +26,13 @@ const allLinks = document.querySelectorAll('a');
 allLinks.forEach((elem) => {
     if (htmlName() === 'index.html') {
         if (elem.textContent === 'Главная') {
-            elem.remove();
+            // elem.remove();
         }
     }
 
     if (htmlName() === 'types-of-animals.html') {
         if (elem.textContent === 'Виды животных') {
-            elem.remove();
+            // elem.remove();
         }
     }
     
