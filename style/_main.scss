@@ -163,7 +163,7 @@
         background-color: $colorBlue;
         max-width: 623px;
         padding: 30px 25px;
-        border-radius: 30px;
+        border-radius: 15px;
         margin-bottom: 35px;
         &:nth-child(2){
             background-color: $colorGreen;
@@ -277,7 +277,7 @@
         }
         &--full{
             width: 100%;
-            border-radius: 30px;
+            border-radius: 15px;
             padding: 30px 25px;
             background-color: $colorGreen;
             & img{
@@ -316,14 +316,14 @@
 .main__wrapper-contact--info{
     padding: 60px 80px;
     background-color: $colorBlue;
-    border-radius: 30px;
+    border-radius: 15px;
 }
 
 .main__contact{
     &-title{
         font-family: $fontFamMontserrat;
         font-weight: 700;
-        font-size: 48px;
+        font-size: 32px;
         color: $colorWhite;
         margin-bottom: 45px;
         text-align: center;

@@ -575,7 +575,7 @@
   background-color: #466188;
   max-width: 623px;
   padding: 30px 25px;
-  border-radius: 30px;
+  border-radius: 15px;
   margin-bottom: 35px;
 }
 
@@ -701,7 +701,7 @@
 
 .main__services-card--full {
   width: 100%;
-  border-radius: 30px;
+  border-radius: 15px;
   padding: 30px 25px;
   background-color: #5A8D79;
 }
@@ -748,13 +748,13 @@
 .main__wrapper-contact--info {
   padding: 60px 80px;
   background-color: #466188;
-  border-radius: 30px;
+  border-radius: 15px;
 }
 
 .main__contact-title {
   font-family: "Montserrat", sans-serif;
   font-weight: 700;
-  font-size: 48px;
+  font-size: 32px;
   color: #ffffff;
   margin-bottom: 45px;
   text-align: center;
