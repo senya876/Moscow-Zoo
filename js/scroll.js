@@ -22,7 +22,7 @@ if (localStorage.getItem('toElement')){
 }
 localStorage.setItem('toElement','');
 // Сброс
-const allLinks = document.querySelectorAll('a');
+const allLinks = document.querySelectorAll('.header__link');
 allLinks.forEach((elem) => {
     if (htmlName() === 'index.html') {
         if (elem.textContent === 'Главная') {
