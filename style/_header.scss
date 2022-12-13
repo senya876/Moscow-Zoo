@@ -43,6 +43,15 @@
             text-decoration: none;
             color: white;
         }
+        &-center{
+          margin-left: 50%;
+        }
+        &-blue{
+          background-color: $colorBlue;
+          &:hover{
+            background-color: rgb(31, 36, 66);
+          }
+        }
         &-enter{
             background-color: $colorLightBlue;
             margin-right: 20px;

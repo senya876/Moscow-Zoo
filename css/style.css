@@ -77,6 +77,18 @@
   color: white;
 }
 
+.header__button-center {
+  margin-left: 50%;
+}
+
+.header__button-blue {
+  background-color: #466188;
+}
+
+.header__button-blue:hover {
+  background-color: #1f2442;
+}
+
 .header__button-enter {
   background-color: #82A1CF;
   margin-right: 20px;
