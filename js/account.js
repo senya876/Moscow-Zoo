@@ -1,4 +1,4 @@
-import {logoutButtons, logout} from "./pageLinks.js";
+import { logout } from "./pageLinks.js";
 
 const user = JSON.parse(localStorage.getItem('user'));
 if (!user.email) {
@@ -16,5 +16,21 @@ if (!user.autoAuth) {
         }));
     };
 }
-// 1. Во время авторизации не срабатывает проверка "запомнить вход"
-// 2. Вывод данных пользователя в этом скрипте и использовать импортированные кнопки
+//
+const logoutButtons = document.querySelectorAll('.header__button-logout');
+logoutButtons.forEach((elem) => {
+    elem.addEventListener('click', (e) => {
+        e.preventDefault();
+        logout();
+    });
+})
+//
+const userName = document.querySelector('#user-name'),
+      userSurname = document.querySelector('#user-surname'),
+      userEmail = document.querySelector('#user-email'),
+      userPassword = document.querySelector('#user-password');
+
+userName.textContent += ' ' + user.name;
+userSurname.textContent += ' ' + user.surname;
+userEmail.textContent += ' ' + user.email;
+userPassword.textContent += ' ' + user.password;

@@ -1,5 +1,4 @@
-import * as Init from "./pageLinks.js";
-import {dataAndLinksInit} from "./pageLinks.js";
+import { dataAndLinksInit } from "./pageLinks.js";
 
 const authForm = document.querySelector('#authForm'),
       regForm = document.querySelector('#regForm'),
@@ -127,7 +126,7 @@ function regFormdata(e) {
         for(let item of formData.entries()) {
             obj[item[0]] = item[1];
         }
-        obj.autoAuth = false;
+        obj.autoAuth = true;
 
         span = document.createElement('span');
         for (let i = 0; i < accounts.length; i++) {
@@ -140,6 +139,7 @@ function regFormdata(e) {
             }
         }
         accounts.push(obj);
+        localStorage.setItem('user', JSON.stringify(obj));
         localStorage.setItem('accounts', JSON.stringify(accounts));
         document.body.dataset.modalOpened = '';
         setTimeout(() => {
