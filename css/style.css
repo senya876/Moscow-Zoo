@@ -144,6 +144,22 @@
   background-color: #3FCC91;
 }
 
+.header__button-green {
+  background-color: #76C1A2 ;
+}
+
+.header__button-green:hover {
+  background-color: #53a886;
+}
+
+.header__button-red {
+  background-color: #f86e6e;
+}
+
+.header__button-red:hover {
+  background-color: #ee4040;
+}
+
 .modal {
   position: fixed;
   top: 0;
